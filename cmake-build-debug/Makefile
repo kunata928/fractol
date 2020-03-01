@@ -123,32 +123,153 @@ fractol/fast:
 	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/build
 .PHONY : fractol/fast
 
-main.o: main.c.o
+#=============================================================================
+# Target rules for targets named libft
 
-.PHONY : main.o
+# Build rule for target.
+libft: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 libft
+.PHONY : libft
+
+# fast build rule for target.
+libft/fast:
+	$(MAKE) -f minilibx/CMakeFiles/libft.dir/build.make minilibx/CMakeFiles/libft.dir/build
+.PHONY : libft/fast
+
+srcs/error.o: srcs/error.c.o
+
+.PHONY : srcs/error.o
 
 # target to build an object file
-main.c.o:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/main.c.o
-.PHONY : main.c.o
+srcs/error.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/error.c.o
+.PHONY : srcs/error.c.o
 
-main.i: main.c.i
+srcs/error.i: srcs/error.c.i
 
-.PHONY : main.i
+.PHONY : srcs/error.i
 
 # target to preprocess a source file
-main.c.i:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/main.c.i
-.PHONY : main.c.i
+srcs/error.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/error.c.i
+.PHONY : srcs/error.c.i
 
-main.s: main.c.s
+srcs/error.s: srcs/error.c.s
 
-.PHONY : main.s
+.PHONY : srcs/error.s
 
 # target to generate assembly for a file
-main.c.s:
-	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/main.c.s
-.PHONY : main.c.s
+srcs/error.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/error.c.s
+.PHONY : srcs/error.c.s
+
+srcs/fr_init.o: srcs/fr_init.c.o
+
+.PHONY : srcs/fr_init.o
+
+# target to build an object file
+srcs/fr_init.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_init.c.o
+.PHONY : srcs/fr_init.c.o
+
+srcs/fr_init.i: srcs/fr_init.c.i
+
+.PHONY : srcs/fr_init.i
+
+# target to preprocess a source file
+srcs/fr_init.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_init.c.i
+.PHONY : srcs/fr_init.c.i
+
+srcs/fr_init.s: srcs/fr_init.c.s
+
+.PHONY : srcs/fr_init.s
+
+# target to generate assembly for a file
+srcs/fr_init.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_init.c.s
+.PHONY : srcs/fr_init.c.s
+
+srcs/fr_keyboard.o: srcs/fr_keyboard.c.o
+
+.PHONY : srcs/fr_keyboard.o
+
+# target to build an object file
+srcs/fr_keyboard.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_keyboard.c.o
+.PHONY : srcs/fr_keyboard.c.o
+
+srcs/fr_keyboard.i: srcs/fr_keyboard.c.i
+
+.PHONY : srcs/fr_keyboard.i
+
+# target to preprocess a source file
+srcs/fr_keyboard.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_keyboard.c.i
+.PHONY : srcs/fr_keyboard.c.i
+
+srcs/fr_keyboard.s: srcs/fr_keyboard.c.s
+
+.PHONY : srcs/fr_keyboard.s
+
+# target to generate assembly for a file
+srcs/fr_keyboard.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_keyboard.c.s
+.PHONY : srcs/fr_keyboard.c.s
+
+srcs/ft_change_map.o: srcs/ft_change_map.c.o
+
+.PHONY : srcs/ft_change_map.o
+
+# target to build an object file
+srcs/ft_change_map.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/ft_change_map.c.o
+.PHONY : srcs/ft_change_map.c.o
+
+srcs/ft_change_map.i: srcs/ft_change_map.c.i
+
+.PHONY : srcs/ft_change_map.i
+
+# target to preprocess a source file
+srcs/ft_change_map.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/ft_change_map.c.i
+.PHONY : srcs/ft_change_map.c.i
+
+srcs/ft_change_map.s: srcs/ft_change_map.c.s
+
+.PHONY : srcs/ft_change_map.s
+
+# target to generate assembly for a file
+srcs/ft_change_map.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/ft_change_map.c.s
+.PHONY : srcs/ft_change_map.c.s
+
+srcs/main.o: srcs/main.c.o
+
+.PHONY : srcs/main.o
+
+# target to build an object file
+srcs/main.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/main.c.o
+.PHONY : srcs/main.c.o
+
+srcs/main.i: srcs/main.c.i
+
+.PHONY : srcs/main.i
+
+# target to preprocess a source file
+srcs/main.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/main.c.i
+.PHONY : srcs/main.c.i
+
+srcs/main.s: srcs/main.c.s
+
+.PHONY : srcs/main.s
+
+# target to generate assembly for a file
+srcs/main.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/main.c.s
+.PHONY : srcs/main.c.s
 
 # Help Target
 help:
@@ -159,9 +280,22 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... fractol"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... libft"
+	@echo "... srcs/error.o"
+	@echo "... srcs/error.i"
+	@echo "... srcs/error.s"
+	@echo "... srcs/fr_init.o"
+	@echo "... srcs/fr_init.i"
+	@echo "... srcs/fr_init.s"
+	@echo "... srcs/fr_keyboard.o"
+	@echo "... srcs/fr_keyboard.i"
+	@echo "... srcs/fr_keyboard.s"
+	@echo "... srcs/ft_change_map.o"
+	@echo "... srcs/ft_change_map.i"
+	@echo "... srcs/ft_change_map.s"
+	@echo "... srcs/main.o"
+	@echo "... srcs/main.i"
+	@echo "... srcs/main.s"
 .PHONY : help
 
 

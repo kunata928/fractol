@@ -1,5 +1,9 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/fractol.dir/main.c.o"
+  "CMakeFiles/fractol.dir/srcs/error.c.o"
+  "CMakeFiles/fractol.dir/srcs/fr_init.c.o"
+  "CMakeFiles/fractol.dir/srcs/fr_keyboard.c.o"
+  "CMakeFiles/fractol.dir/srcs/ft_change_map.c.o"
+  "CMakeFiles/fractol.dir/srcs/main.c.o"
   "fractol"
   "fractol.pdb"
 )

@@ -14,6 +14,13 @@
 #ifndef FRACTOL_H
 # define FRACTOL_H
 
+# include <unistd.h>
+# include <fcntl.h>
+# include <math.h>
+# include <stdlib.h>
+# include "../includes/mlx.h"
+# include "../libft/includes/libft.h"
+
 # define WHITE				0xFFFFFF
 # define BLACK				0x000000
 # define WINE				0xAB271D
@@ -44,6 +51,8 @@
 # define KEY_B				11
 # define KEY_Q				12
 # define KEY_W				13
+# define KEY_J				38
+# define KEY_M				46
 # define KEY_SPACE			49
 # define KEY_PLUS			69
 # define KEY_MINUS			78
@@ -60,17 +69,33 @@
 # define KEY_NUM_LEFT		123
 # define KEY_NUM_RIGHT		124
 
-typedef struct				s_contr
+typedef struct		s_contr
 {
 	int		shift;
 	int		cntrl;
 	int		help;
+	int		map;
+}					t_contr;
 
-}							t_contr;
-
-typedef struct				s_fr
+typedef struct		s_fr
 {
 	t_contr contr;
-}							t_fr;
+
+	void			*mlx;
+	void			*win;
+	void			*img_ptr;
+	char			*image;
+	int				bpp;
+	int				s_line;
+	int				endian;
+	char			*map_name;
+}					t_fr;
+
+
+void				fr_change_map(t_fr *fr, int key);
+int					fr_read_consol(int ac, char **av, t_fr *fr);
+
+void				fr_not_valid_imput(void);
+int					fr_close(void *param);
 
 #endif

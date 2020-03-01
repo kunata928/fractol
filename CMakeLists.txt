@@ -4,17 +4,17 @@ project(fractol C)
 set(CMAKE_C_STANDARD 99)
 link_directories(minilibx)
 
-include_directories(fdf/includes)
+include_directories(fractol/includes)
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -lmlx -framework OpenGL -framework AppKit")
 
-set(SOURCES )
+set(SOURCES srcs/main.c srcs/error.c srcs/fr_keyboard.c srcs/ft_change_map.c srcs/fr_init.c)
 
-set(HEADERS includes/fdf.h includes/mlx.h)
+set(HEADERS includes/fractol.h includes/mlx.h)
 
 set(LIBMLX minilibx/libmlx.a)
 
-add_executable(fdf ${SOURCES} ${HEADERS} ${LIBMLX})
+add_executable(fractol ${SOURCES} ${HEADERS} ${LIBMLX})
 
 add_subdirectory(libft minilibx)
 

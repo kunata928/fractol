@@ -5,7 +5,7 @@
 		<Option title="fractol"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\libft\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/pmelodi/Projects/fractol/cmake-build-debug"/>
@@ -44,6 +44,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/pmelodi/Projects/fractol/fractol/includes"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -65,6 +66,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
+					<Add directory="/Users/pmelodi/Projects/fractol/fractol/includes"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
@@ -79,15 +81,281 @@
 					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pmelodi/Projects/fractol/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="libft">
+				<Option output="/Users/pmelodi/Projects/fractol/cmake-build-debug/minilibx/liblibft.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/pmelodi/Projects/fractol/cmake-build-debug/minilibx"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/pmelodi/Projects/fractol/fractol/includes"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pmelodi/Projects/fractol/cmake-build-debug/minilibx/Makefile&quot;  VERBOSE=1 libft"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pmelodi/Projects/fractol/cmake-build-debug/minilibx/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pmelodi/Projects/fractol/cmake-build-debug/minilibx/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pmelodi/Projects/fractol/cmake-build-debug/minilibx/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libft/fast">
+				<Option output="/Users/pmelodi/Projects/fractol/cmake-build-debug/minilibx/liblibft.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/pmelodi/Projects/fractol/cmake-build-debug/minilibx"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Users/pmelodi/Projects/fractol/fractol/includes"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/9.0.0/include"/>
+					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include"/>
+					<Add directory="/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j4 -f &quot;/Users/pmelodi/Projects/fractol/cmake-build-debug/minilibx/Makefile&quot;  VERBOSE=1 libft/fast"/>
+					<CompileFile command="/usr/bin/make -j4 -f &quot;/Users/pmelodi/Projects/fractol/cmake-build-debug/minilibx/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j4 -f &quot;/Users/pmelodi/Projects/fractol/cmake-build-debug/minilibx/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j4 -f &quot;/Users/pmelodi/Projects/fractol/cmake-build-debug/minilibx/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 		</Build>
 		<Unit filename="/Users/pmelodi/Projects/fractol/includes/fractol.h">
 			<Option target="fractol"/>
 		</Unit>
-		<Unit filename="/Users/pmelodi/Projects/fractol/main.c">
+		<Unit filename="/Users/pmelodi/Projects/fractol/includes/mlx.h">
+			<Option target="fractol"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/includes/get_next_line.h">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/includes/libft.h">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_atoi.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_bzero.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_cnt_words.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_cntchr.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_isalnum.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_isalpha.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_isascii.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_isdigit.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_isprint.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_iswhitespace.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_iterative_power.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_itoa.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_lstadd.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_lstdel.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_lstdelone.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_lstiter.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_lstlen.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_lstmap.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_lstnew.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_memalloc.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_memccpy.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_memchr.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_memcmp.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_memcpy.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_memdel.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_memmove.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_memset.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_numlen.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_putchar.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_putchar_fd.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_putendl.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_putendl_fd.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_putnbr.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_putnbr_fd.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_putstr.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_putstr_fd.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_strcat.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_strchr.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_strclr.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_strcmp.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_strcpy.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_strdel.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_strdup.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_strequ.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_striter.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_striteri.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_strjoin.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_strlcat.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_strlen.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_strmap.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_strmapi.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_strncat.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_strncmp.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_strncpy.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_strnequ.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_strnew.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_strnstr.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_strrchr.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_strsplit.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_strstr.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_strsub.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_strtrim.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_tolower.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/ft_toupper.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/srcs/get_next_line.c">
+			<Option target="libft"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/minilibx/libmlx.a">
+			<Option target="fractol"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/srcs/error.c">
+			<Option target="fractol"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/srcs/fr_init.c">
+			<Option target="fractol"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/srcs/fr_keyboard.c">
+			<Option target="fractol"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/srcs/ft_change_map.c">
+			<Option target="fractol"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/srcs/main.c">
 			<Option target="fractol"/>
 		</Unit>
 		<Unit filename="/Users/pmelodi/Projects/fractol/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/Users/pmelodi/Projects/fractol/libft/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\libft\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>
