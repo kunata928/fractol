@@ -8,7 +8,7 @@ include_directories(fractol/includes)
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -lmlx -framework OpenGL -framework AppKit")
 
-set(SOURCES srcs/main.c srcs/error.c srcs/fr_keyboard.c srcs/ft_change_map.c srcs/fr_init.c)
+set(SOURCES srcs/main.c srcs/error.c srcs/fr_keyboard.c srcs/ft_change_map.c srcs/fr_init.c srcs/fr_plot.c)
 
 set(HEADERS includes/fractol.h includes/mlx.h)
 

@@ -12,6 +12,13 @@
 
 #include "../includes/fractol.h"
 
+void		fr_init(t_fr *fr)
+{
+	fr->mlx = mlx_init();
+	fr->win = mlx_new_window(fr->mlx, WINSIZEX, WINSIZEY, "Title");
+	//fr->map_name = fr_name_map(fr);
+}
+
 int			fr_init_map(char *map, t_fr *fr)
 {
 	if (ft_strlen(map) == 1)
@@ -44,4 +51,15 @@ int			fr_read_consol(int ac, char **av, t_fr *fr)
 	else
 		return (1);
 	return (0);
+}
+
+char		*fr_name_map(t_fr *fr)
+{
+	char	*txt;
+
+	if (fr->contr.map == 1)
+		return (ft_strcpy(txt, "Mandelbrot"));
+	if (fr->contr.map == 2)
+		return (ft_strcpy(txt,"Julia"));
+	return ("");
 }

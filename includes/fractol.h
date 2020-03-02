@@ -29,6 +29,7 @@
 
 # define WINSIZEX			700
 # define WINSIZEY			700
+# define MAX_ITERATION		8
 
 # define KEYBOARD			1
 # define MOUSE				2
@@ -71,15 +72,22 @@
 
 typedef struct		s_contr
 {
-	int		shift;
-	int		cntrl;
-	int		help;
-	int		map;
+	int				shift;
+	int				cntrl;
+	int				help;
+	int				map;
 }					t_contr;
+
+typedef struct		s_pnt
+{
+	double			r;
+	double			i;
+}					t_pnt;
 
 typedef struct		s_fr
 {
-	t_contr contr;
+	t_contr			contr;
+	t_pnt			pnt;
 
 	void			*mlx;
 	void			*win;
@@ -91,11 +99,17 @@ typedef struct		s_fr
 	char			*map_name;
 }					t_fr;
 
+int					fr_key_press(int keycode, t_fr *fr);
 
+void				fr_init(t_fr *fr);
 void				fr_change_map(t_fr *fr, int key);
 int					fr_read_consol(int ac, char **av, t_fr *fr);
+char				*fr_name_map(t_fr *fr);
 
 void				fr_not_valid_imput(void);
 int					fr_close(void *param);
+
+
+void	test_plot(t_fr *fr);
 
 #endif

@@ -217,6 +217,33 @@ srcs/fr_keyboard.c.s:
 	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_keyboard.c.s
 .PHONY : srcs/fr_keyboard.c.s
 
+srcs/fr_plot.o: srcs/fr_plot.c.o
+
+.PHONY : srcs/fr_plot.o
+
+# target to build an object file
+srcs/fr_plot.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_plot.c.o
+.PHONY : srcs/fr_plot.c.o
+
+srcs/fr_plot.i: srcs/fr_plot.c.i
+
+.PHONY : srcs/fr_plot.i
+
+# target to preprocess a source file
+srcs/fr_plot.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_plot.c.i
+.PHONY : srcs/fr_plot.c.i
+
+srcs/fr_plot.s: srcs/fr_plot.c.s
+
+.PHONY : srcs/fr_plot.s
+
+# target to generate assembly for a file
+srcs/fr_plot.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_plot.c.s
+.PHONY : srcs/fr_plot.c.s
+
 srcs/ft_change_map.o: srcs/ft_change_map.c.o
 
 .PHONY : srcs/ft_change_map.o
@@ -290,6 +317,9 @@ help:
 	@echo "... srcs/fr_keyboard.o"
 	@echo "... srcs/fr_keyboard.i"
 	@echo "... srcs/fr_keyboard.s"
+	@echo "... srcs/fr_plot.o"
+	@echo "... srcs/fr_plot.i"
+	@echo "... srcs/fr_plot.s"
 	@echo "... srcs/ft_change_map.o"
 	@echo "... srcs/ft_change_map.i"
 	@echo "... srcs/ft_change_map.s"
