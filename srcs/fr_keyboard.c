@@ -15,7 +15,8 @@
 int			fdf_check_key(int keycode)
 {
 	if (keycode == KEY_ESC || keycode == KEY_M ||
-			keycode == KEY_J)
+			keycode == KEY_J || keycode == KEY_PLUS
+			|| keycode == KEY_MINUS)
 		return (1);
 	return (0);
 }
@@ -37,6 +38,12 @@ int			fr_key_press(int keycode, t_fr *fr)
 			exit(1);
 		if (keycode == KEY_M || keycode == KEY_J)
 			fr_change_map(fr, keycode);
+		if (keycode == KEY_PLUS || keycode == KEY_MINUS)
+		{
+
+			fr_change_iter(fr, keycode);
+		}
+
 	}
 	return (0);
 }

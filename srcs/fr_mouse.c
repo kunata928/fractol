@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   fr_mouse.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pmelodi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,17 +12,9 @@
 
 #include "../includes/fractol.h"
 
-int		main(int argc, char **argv)
+void		fr_mouse_scroll(int button, int x, int y, t_fr *fr)
 {
-	t_fr fr;
-
-	if (fr_read_consol(argc, argv, &fr))
-		fr_not_valid_imput();
-	fr_init(&fr);
-	fr_plot(&fr);
-	//mlx_hook(fr.win, 4, 0, fr_mouse_scroll, &fr);
-	mlx_hook(fr.win, 17, 0, fr_close, 0);
-	mlx_hook(fr.win, 2, 0, fr_key_press, &fr);
-	mlx_loop(fr.mlx);
-	return (0);
+	if (button == MOUSE_SCROLL_UP || button == MOUSE_SCROLL_DOWN)
+		button = 0;
+		//fr_scale_image(button, fr, x, y);
 }

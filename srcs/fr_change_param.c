@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   fr_change_param.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pmelodi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,17 +12,25 @@
 
 #include "../includes/fractol.h"
 
-int		main(int argc, char **argv)
+void		fr_change_iter(t_fr *fr, int keycode)
 {
-	t_fr fr;
-
-	if (fr_read_consol(argc, argv, &fr))
-		fr_not_valid_imput();
-	fr_init(&fr);
-	fr_plot(&fr);
-	//mlx_hook(fr.win, 4, 0, fr_mouse_scroll, &fr);
-	mlx_hook(fr.win, 17, 0, fr_close, 0);
-	mlx_hook(fr.win, 2, 0, fr_key_press, &fr);
-	mlx_loop(fr.mlx);
-	return (0);
+	if(keycode == KEY_PLUS)
+	{
+		if (fr->iter > 1500)
+			fr->iter += 5;
+		else
+			fr->iter += 1;
+	}
+	if(keycode == KEY_MINUS)
+	{
+		if (fr->iter > 150)
+			fr->iter -= 5;
+		else
+			fr->iter -= 1;
+	}
+	if (fr->iter < 1)
+		fr->iter = 1;
+	if (fr->iter > MAX_ITERATION)
+		fr->iter = MAX_ITERATION;
+	fr_plot(fr);
 }

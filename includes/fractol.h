@@ -14,6 +14,8 @@
 #ifndef FRACTOL_H
 # define FRACTOL_H
 
+# include <stdio.h>
+
 # include <unistd.h>
 # include <fcntl.h>
 # include <math.h>
@@ -29,7 +31,7 @@
 
 # define WINSIZEX			700
 # define WINSIZEY			700
-# define MAX_ITERATION		8
+# define MAX_ITERATION		255
 
 # define KEYBOARD			1
 # define MOUSE				2
@@ -55,8 +57,8 @@
 # define KEY_J				38
 # define KEY_M				46
 # define KEY_SPACE			49
-# define KEY_PLUS			69
-# define KEY_MINUS			78
+# define KEY_PLUS			24
+# define KEY_MINUS			27
 # define KEY_NUM_1			83
 # define KEY_NUM_2			84
 # define KEY_NUM_3			85
@@ -97,6 +99,8 @@ typedef struct		s_fr
 	int				s_line;
 	int				endian;
 	char			*map_name;
+
+	int				iter;
 }					t_fr;
 
 int					fr_key_press(int keycode, t_fr *fr);
@@ -110,6 +114,10 @@ void				fr_not_valid_imput(void);
 int					fr_close(void *param);
 
 
-void	test_plot(t_fr *fr);
+void				fr_mouse_scroll(int button, int x, int y, t_fr *fr);
+
+void				fr_change_iter(t_fr *fr, int keycode);
+
+void				fr_plot(t_fr *fr);
 
 #endif

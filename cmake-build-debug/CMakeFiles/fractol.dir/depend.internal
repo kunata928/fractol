@@ -6,6 +6,11 @@ CMakeFiles/fractol.dir/srcs/error.c.o
  /Users/pmelodi/Projects/fractol/includes/mlx.h
  /Users/pmelodi/Projects/fractol/libft/includes/libft.h
  /Users/pmelodi/Projects/fractol/srcs/error.c
+CMakeFiles/fractol.dir/srcs/fr_change_param.c.o
+ /Users/pmelodi/Projects/fractol/includes/fractol.h
+ /Users/pmelodi/Projects/fractol/includes/mlx.h
+ /Users/pmelodi/Projects/fractol/libft/includes/libft.h
+ /Users/pmelodi/Projects/fractol/srcs/fr_change_param.c
 CMakeFiles/fractol.dir/srcs/fr_init.c.o
  /Users/pmelodi/Projects/fractol/includes/fractol.h
  /Users/pmelodi/Projects/fractol/includes/mlx.h
@@ -16,6 +21,11 @@ CMakeFiles/fractol.dir/srcs/fr_keyboard.c.o
  /Users/pmelodi/Projects/fractol/includes/mlx.h
  /Users/pmelodi/Projects/fractol/libft/includes/libft.h
  /Users/pmelodi/Projects/fractol/srcs/fr_keyboard.c
+CMakeFiles/fractol.dir/srcs/fr_mouse.c.o
+ /Users/pmelodi/Projects/fractol/includes/fractol.h
+ /Users/pmelodi/Projects/fractol/includes/mlx.h
+ /Users/pmelodi/Projects/fractol/libft/includes/libft.h
+ /Users/pmelodi/Projects/fractol/srcs/fr_mouse.c
 CMakeFiles/fractol.dir/srcs/fr_plot.c.o
  /Users/pmelodi/Projects/fractol/includes/fractol.h
  /Users/pmelodi/Projects/fractol/includes/mlx.h

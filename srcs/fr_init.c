@@ -15,6 +15,7 @@
 void		fr_init(t_fr *fr)
 {
 	fr->mlx = mlx_init();
+	fr->iter = MAX_ITERATION;
 	fr->win = mlx_new_window(fr->mlx, WINSIZEX, WINSIZEY, "Title");
 	//fr->map_name = fr_name_map(fr);
 }

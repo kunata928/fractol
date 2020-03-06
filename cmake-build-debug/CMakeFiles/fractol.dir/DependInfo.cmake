@@ -5,8 +5,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/pmelodi/Projects/fractol/srcs/error.c" "/Users/pmelodi/Projects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/error.c.o"
+  "/Users/pmelodi/Projects/fractol/srcs/fr_change_param.c" "/Users/pmelodi/Projects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_change_param.c.o"
   "/Users/pmelodi/Projects/fractol/srcs/fr_init.c" "/Users/pmelodi/Projects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_init.c.o"
   "/Users/pmelodi/Projects/fractol/srcs/fr_keyboard.c" "/Users/pmelodi/Projects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_keyboard.c.o"
+  "/Users/pmelodi/Projects/fractol/srcs/fr_mouse.c" "/Users/pmelodi/Projects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_mouse.c.o"
   "/Users/pmelodi/Projects/fractol/srcs/fr_plot.c" "/Users/pmelodi/Projects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_plot.c.o"
   "/Users/pmelodi/Projects/fractol/srcs/ft_change_map.c" "/Users/pmelodi/Projects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/ft_change_map.c.o"
   "/Users/pmelodi/Projects/fractol/srcs/main.c" "/Users/pmelodi/Projects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/main.c.o"

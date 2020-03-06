@@ -163,6 +163,33 @@ srcs/error.c.s:
 	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/error.c.s
 .PHONY : srcs/error.c.s
 
+srcs/fr_change_param.o: srcs/fr_change_param.c.o
+
+.PHONY : srcs/fr_change_param.o
+
+# target to build an object file
+srcs/fr_change_param.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_change_param.c.o
+.PHONY : srcs/fr_change_param.c.o
+
+srcs/fr_change_param.i: srcs/fr_change_param.c.i
+
+.PHONY : srcs/fr_change_param.i
+
+# target to preprocess a source file
+srcs/fr_change_param.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_change_param.c.i
+.PHONY : srcs/fr_change_param.c.i
+
+srcs/fr_change_param.s: srcs/fr_change_param.c.s
+
+.PHONY : srcs/fr_change_param.s
+
+# target to generate assembly for a file
+srcs/fr_change_param.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_change_param.c.s
+.PHONY : srcs/fr_change_param.c.s
+
 srcs/fr_init.o: srcs/fr_init.c.o
 
 .PHONY : srcs/fr_init.o
@@ -216,6 +243,33 @@ srcs/fr_keyboard.s: srcs/fr_keyboard.c.s
 srcs/fr_keyboard.c.s:
 	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_keyboard.c.s
 .PHONY : srcs/fr_keyboard.c.s
+
+srcs/fr_mouse.o: srcs/fr_mouse.c.o
+
+.PHONY : srcs/fr_mouse.o
+
+# target to build an object file
+srcs/fr_mouse.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_mouse.c.o
+.PHONY : srcs/fr_mouse.c.o
+
+srcs/fr_mouse.i: srcs/fr_mouse.c.i
+
+.PHONY : srcs/fr_mouse.i
+
+# target to preprocess a source file
+srcs/fr_mouse.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_mouse.c.i
+.PHONY : srcs/fr_mouse.c.i
+
+srcs/fr_mouse.s: srcs/fr_mouse.c.s
+
+.PHONY : srcs/fr_mouse.s
+
+# target to generate assembly for a file
+srcs/fr_mouse.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_mouse.c.s
+.PHONY : srcs/fr_mouse.c.s
 
 srcs/fr_plot.o: srcs/fr_plot.c.o
 
@@ -311,12 +365,18 @@ help:
 	@echo "... srcs/error.o"
 	@echo "... srcs/error.i"
 	@echo "... srcs/error.s"
+	@echo "... srcs/fr_change_param.o"
+	@echo "... srcs/fr_change_param.i"
+	@echo "... srcs/fr_change_param.s"
 	@echo "... srcs/fr_init.o"
 	@echo "... srcs/fr_init.i"
 	@echo "... srcs/fr_init.s"
 	@echo "... srcs/fr_keyboard.o"
 	@echo "... srcs/fr_keyboard.i"
 	@echo "... srcs/fr_keyboard.s"
+	@echo "... srcs/fr_mouse.o"
+	@echo "... srcs/fr_mouse.i"
+	@echo "... srcs/fr_mouse.s"
 	@echo "... srcs/fr_plot.o"
 	@echo "... srcs/fr_plot.i"
 	@echo "... srcs/fr_plot.s"
