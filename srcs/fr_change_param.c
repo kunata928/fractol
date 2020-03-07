@@ -32,5 +32,6 @@ void		fr_change_iter(t_fr *fr, int keycode)
 		fr->iter = 1;
 	if (fr->iter > MAX_ITERATION)
 		fr->iter = MAX_ITERATION;
+	fr_set_color(fr);
 	fr_plot(fr);
 }

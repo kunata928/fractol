@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/pmelodi/Projects/fractol/srcs/error.c" "/Users/pmelodi/Projects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/error.c.o"
   "/Users/pmelodi/Projects/fractol/srcs/fr_change_param.c" "/Users/pmelodi/Projects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_change_param.c.o"
+  "/Users/pmelodi/Projects/fractol/srcs/fr_color.c" "/Users/pmelodi/Projects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_color.c.o"
   "/Users/pmelodi/Projects/fractol/srcs/fr_init.c" "/Users/pmelodi/Projects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_init.c.o"
   "/Users/pmelodi/Projects/fractol/srcs/fr_keyboard.c" "/Users/pmelodi/Projects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_keyboard.c.o"
   "/Users/pmelodi/Projects/fractol/srcs/fr_mouse.c" "/Users/pmelodi/Projects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_mouse.c.o"

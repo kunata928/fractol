@@ -29,6 +29,10 @@
 # define ROSE				0x6D3445
 # define STRONG_ROSE		0x9D788F
 
+# define GELB				0xF3D476
+# define ROT				0x622C40
+# define BLAU				0x06062C
+//0x06062C
 # define WINSIZEX			700
 # define WINSIZEY			700
 # define MAX_ITERATION		255
@@ -86,6 +90,15 @@ typedef struct		s_pnt
 	double			i;
 }					t_pnt;
 
+typedef struct		s_col
+{
+	int				start;
+	int				end;
+	int				scol;
+	int				ecol;
+	int				cur;
+}					t_col;
+
 typedef struct		s_fr
 {
 	t_contr			contr;
@@ -99,6 +112,7 @@ typedef struct		s_fr
 	int				s_line;
 	int				endian;
 	char			*map_name;
+	int				*color;
 
 	int				iter;
 }					t_fr;
@@ -119,5 +133,7 @@ void				fr_mouse_scroll(int button, int x, int y, t_fr *fr);
 void				fr_change_iter(t_fr *fr, int keycode);
 
 void				fr_plot(t_fr *fr);
+
+void				fr_set_color(t_fr *fr);
 
 #endif

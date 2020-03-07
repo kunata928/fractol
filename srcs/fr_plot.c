@@ -26,6 +26,7 @@ int		fr_eval(t_pnt pnt, t_pnt s, t_fr *fr)
 		pnt.i = tmp.i;
 		i++;
 	}
+	return (fr->color[i]);
 	if (i == fr->iter)
 		return (WHITE);
 	else
@@ -36,7 +37,6 @@ void	fr_plot(t_fr *fr)
 {
 	int i;
 	float k;
-
 
 	i = 0;
 	k = (float)4 / WINSIZEX;

@@ -190,6 +190,33 @@ srcs/fr_change_param.c.s:
 	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_change_param.c.s
 .PHONY : srcs/fr_change_param.c.s
 
+srcs/fr_color.o: srcs/fr_color.c.o
+
+.PHONY : srcs/fr_color.o
+
+# target to build an object file
+srcs/fr_color.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_color.c.o
+.PHONY : srcs/fr_color.c.o
+
+srcs/fr_color.i: srcs/fr_color.c.i
+
+.PHONY : srcs/fr_color.i
+
+# target to preprocess a source file
+srcs/fr_color.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_color.c.i
+.PHONY : srcs/fr_color.c.i
+
+srcs/fr_color.s: srcs/fr_color.c.s
+
+.PHONY : srcs/fr_color.s
+
+# target to generate assembly for a file
+srcs/fr_color.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_color.c.s
+.PHONY : srcs/fr_color.c.s
+
 srcs/fr_init.o: srcs/fr_init.c.o
 
 .PHONY : srcs/fr_init.o
@@ -368,6 +395,9 @@ help:
 	@echo "... srcs/fr_change_param.o"
 	@echo "... srcs/fr_change_param.i"
 	@echo "... srcs/fr_change_param.s"
+	@echo "... srcs/fr_color.o"
+	@echo "... srcs/fr_color.i"
+	@echo "... srcs/fr_color.s"
 	@echo "... srcs/fr_init.o"
 	@echo "... srcs/fr_init.i"
 	@echo "... srcs/fr_init.s"

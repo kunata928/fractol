@@ -16,6 +16,8 @@ void		fr_init(t_fr *fr)
 {
 	fr->mlx = mlx_init();
 	fr->iter = MAX_ITERATION;
+	fr->color = (int *)ft_memalloc(sizeof(int) * (fr->iter + 1));
+	fr_set_color(fr);
 	fr->win = mlx_new_window(fr->mlx, WINSIZEX, WINSIZEY, "Title");
 	//fr->map_name = fr_name_map(fr);
 }
