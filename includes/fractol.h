@@ -28,6 +28,10 @@
 # define WINE				0xAB271D
 # define ROSE				0x6D3445
 # define STRONG_ROSE		0x9D788F
+# define DEF_COL			0xC488AC
+# define TEXT_COL0			0x9D828F
+# define TEXT_COL1			0xAF6C93
+# define TEXT_COL2			0xD54E94
 
 # define GELB				0xF3D476
 # define ROT				0x622C40
@@ -37,11 +41,14 @@
 # define WINSIZEY			700
 # define MAX_ITERATION		255
 
-# define KEYBOARD			1
-# define MOUSE				2
+# define TRUE				1
+# define FALSE				0
 # define MOUSE_SCROLL_UP	4
 # define MOUSE_SCROLL_DOWN	5
 # define MOUSE_BUTTON_MID	3
+# define MOUSE_LEFT_BUTTON	1
+# define MOUSE_RIGHT_BUTTON	2
+
 # define KEY_ESC			53
 # define KEY_CTRL_LEFT		256
 # define KEY_SHIFT_LEFT		257
@@ -78,10 +85,13 @@
 
 typedef struct		s_contr
 {
+	int				left_button;
 	int				shift;
 	int				cntrl;
 	int				help;
 	int				map;
+	int				prev_x;
+	int				prev_y;
 }					t_contr;
 
 typedef struct		s_pnt
@@ -115,6 +125,10 @@ typedef struct		s_fr
 	int				*color;
 
 	int				iter;
+	double			scale;
+	int				shift_x;
+	int				shift_y;
+	
 }					t_fr;
 
 int					fr_key_press(int keycode, t_fr *fr);
@@ -127,13 +141,17 @@ char				*fr_name_map(t_fr *fr);
 void				fr_not_valid_imput(void);
 int					fr_close(void *param);
 
+int					fr_mouse_check(int button, int x, int y, t_fr *fr);
+int					fr_mouse_press(int button, int x, int y, t_fr *fr);
+int					fr_mouse_move(int x, int y, t_fr *fr);
 
-void				fr_mouse_scroll(int button, int x, int y, t_fr *fr);
-
+void				fr_scale_image(int keycode, t_fr *fr, int x, int y);
 void				fr_change_iter(t_fr *fr, int keycode);
 
 void				fr_plot(t_fr *fr);
 
 void				fr_set_color(t_fr *fr);
+
+void				fdf_info_static0(t_fr *fr);
 
 #endif

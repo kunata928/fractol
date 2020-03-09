@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   fr_menu.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pmelodi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,20 +12,26 @@
 
 #include "../includes/fractol.h"
 
-
-int		main(int argc, char **argv)
+void		fdf_info_static0(t_fr *fr)
 {
-	t_fr fr;
+	char *txt;
 
-	if (fr_read_consol(argc, argv, &fr))
-		fr_not_valid_imput();
-	fr_init(&fr);
-	fr_plot(&fr);
-	mlx_hook(fr.win, 4, 0, fr_mouse_press, &fr);
-	mlx_hook(fr.win, 5, 0, fr_mouse_check, &fr);
-	mlx_hook(fr.win, 6, 0, fr_mouse_move, &fr);
-	mlx_hook(fr.win, 17, 0, fr_close, 0);
-	mlx_hook(fr.win, 2, 0, fr_key_press, &fr);
-	mlx_loop(fr.mlx);
-	return (0);
+//	mlx_string_put(fr->mlx, fr->win, 0, 0,
+//				   TEXT_COL0, fr->map_name);
+	mlx_string_put(fr->mlx, fr->win, 0, 18,
+				   TEXT_COL0, "Press <Esc> to exit");
+	mlx_string_put(fr->mlx, fr->win,
+				   WINSIZEX - 150, 5, TEXT_COL1, "Iterations:");
+	txt = ft_itoa(fr->iter);
+	mlx_string_put(fr->mlx, fr->win,
+				   WINSIZEX - 35, 5, TEXT_COL2, txt);
+	//mlx_string_put(fr->mlx, fr->win,
+	//			   WINSIZEX - 150, 23, TEXT_COL1, "Shift dy:");
+	free(txt);
+//	txt = ft_itoa(-fr->shift_y);
+//	mlx_string_put(fr->mlx, fr->win,
+//				   WINSIZEX - 57, 23, TEXT_COL2, txt);
+//	free(txt);
+//	fdf_info_static1(fdf);
+//	fdf_info_help(fdf);
 }

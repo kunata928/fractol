@@ -12,11 +12,16 @@
 
 #include "../includes/fractol.h"
 
+void			fr_scale_image(int keycode, t_fr *fr, int x, int y)
+{
+
+}
+
 void		fr_change_iter(t_fr *fr, int keycode)
 {
 	if(keycode == KEY_PLUS)
 	{
-		if (fr->iter > 1500)
+		if (fr->iter > 150)
 			fr->iter += 5;
 		else
 			fr->iter += 1;

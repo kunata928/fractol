@@ -40,7 +40,6 @@ int			fr_key_press(int keycode, t_fr *fr)
 			fr_change_map(fr, keycode);
 		if (keycode == KEY_PLUS || keycode == KEY_MINUS)
 		{
-
 			fr_change_iter(fr, keycode);
 		}
 

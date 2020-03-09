@@ -271,6 +271,33 @@ srcs/fr_keyboard.c.s:
 	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_keyboard.c.s
 .PHONY : srcs/fr_keyboard.c.s
 
+srcs/fr_menu.o: srcs/fr_menu.c.o
+
+.PHONY : srcs/fr_menu.o
+
+# target to build an object file
+srcs/fr_menu.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_menu.c.o
+.PHONY : srcs/fr_menu.c.o
+
+srcs/fr_menu.i: srcs/fr_menu.c.i
+
+.PHONY : srcs/fr_menu.i
+
+# target to preprocess a source file
+srcs/fr_menu.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_menu.c.i
+.PHONY : srcs/fr_menu.c.i
+
+srcs/fr_menu.s: srcs/fr_menu.c.s
+
+.PHONY : srcs/fr_menu.s
+
+# target to generate assembly for a file
+srcs/fr_menu.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/fr_menu.c.s
+.PHONY : srcs/fr_menu.c.s
+
 srcs/fr_mouse.o: srcs/fr_mouse.c.o
 
 .PHONY : srcs/fr_mouse.o
@@ -404,6 +431,9 @@ help:
 	@echo "... srcs/fr_keyboard.o"
 	@echo "... srcs/fr_keyboard.i"
 	@echo "... srcs/fr_keyboard.s"
+	@echo "... srcs/fr_menu.o"
+	@echo "... srcs/fr_menu.i"
+	@echo "... srcs/fr_menu.s"
 	@echo "... srcs/fr_mouse.o"
 	@echo "... srcs/fr_mouse.i"
 	@echo "... srcs/fr_mouse.s"

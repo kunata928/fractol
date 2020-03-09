@@ -27,29 +27,29 @@ int		fr_eval(t_pnt pnt, t_pnt s, t_fr *fr)
 		i++;
 	}
 	return (fr->color[i]);
-	if (i == fr->iter)
-		return (WHITE);
-	else
-		return (BLACK);
 }
 
 void	fr_plot(t_fr *fr)
 {
 	int i;
+	double dr;
+	double di;
 	float k;
 
 	i = 0;
 	k = (float)4 / WINSIZEX;
+	dr = (double)fr->shift_x / 250;
+	di = (double)fr->shift_y / 250;
 	fr->img_ptr = mlx_new_image(fr->mlx, WINSIZEX, WINSIZEY);
 	fr->image = mlx_get_data_addr(fr->img_ptr, &fr->bpp,
 			&fr->s_line, &fr->endian);
-	fr->pnt.r = -2;
-	fr->pnt.i = -2;
+	fr->pnt.r = -2 + dr;
+	fr->pnt.i = -2 + di;
 	while (i < WINSIZEX * WINSIZEY)
 	{
 		if (i % WINSIZEX == 0)
 		{
-			fr->pnt.r = -2;
+			fr->pnt.r = -2 + dr;
 			fr->pnt.i = fr->pnt.i + k;
 		}
 		*(int*)(fr->image + (int)(i % WINSIZEX) * 4 +
@@ -59,4 +59,5 @@ void	fr_plot(t_fr *fr)
 	}
 	mlx_put_image_to_window(fr->mlx, fr->win, fr->img_ptr, 0, 0);
 	mlx_destroy_image(fr->mlx, fr->img_ptr);
+	fdf_info_static0(fr);
 }

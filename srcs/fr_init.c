@@ -16,9 +16,14 @@ void		fr_init(t_fr *fr)
 {
 	fr->mlx = mlx_init();
 	fr->iter = MAX_ITERATION;
+	fr->shift_x = 0;
+	fr->shift_y = 0;
+	fr->contr.prev_x = 0;
+	fr->contr.prev_y = 0;
+	fr->contr.left_button = FALSE;
 	fr->color = (int *)ft_memalloc(sizeof(int) * (fr->iter + 1));
 	fr_set_color(fr);
-	fr->win = mlx_new_window(fr->mlx, WINSIZEX, WINSIZEY, "Title");
+	fr->win = mlx_new_window(fr->mlx, WINSIZEX, WINSIZEY, "fractol");
 	//fr->map_name = fr_name_map(fr);
 }
 

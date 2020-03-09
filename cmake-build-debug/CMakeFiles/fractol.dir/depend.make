@@ -26,6 +26,11 @@ CMakeFiles/fractol.dir/srcs/fr_keyboard.c.o: ../includes/mlx.h
 CMakeFiles/fractol.dir/srcs/fr_keyboard.c.o: ../libft/includes/libft.h
 CMakeFiles/fractol.dir/srcs/fr_keyboard.c.o: ../srcs/fr_keyboard.c
 
+CMakeFiles/fractol.dir/srcs/fr_menu.c.o: ../includes/fractol.h
+CMakeFiles/fractol.dir/srcs/fr_menu.c.o: ../includes/mlx.h
+CMakeFiles/fractol.dir/srcs/fr_menu.c.o: ../libft/includes/libft.h
+CMakeFiles/fractol.dir/srcs/fr_menu.c.o: ../srcs/fr_menu.c
+
 CMakeFiles/fractol.dir/srcs/fr_mouse.c.o: ../includes/fractol.h
 CMakeFiles/fractol.dir/srcs/fr_mouse.c.o: ../includes/mlx.h
 CMakeFiles/fractol.dir/srcs/fr_mouse.c.o: ../libft/includes/libft.h

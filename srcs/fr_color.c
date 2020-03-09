@@ -74,7 +74,11 @@ void		fr_set_color(t_fr *fr)
 	int		mid;
 
 	i = 0;
-	mid = fdf_doublebltoint(fr->iter / log2((double)fr->iter));
+//	if (fr->iter >= 135)
+//		mid = 20;
+//	else
+		//mid = fr->iter / 2;
+		mid = fdf_doublebltoint(fr->iter / log2((double)fr->iter));
 	col.start = 0;
 	col.end = mid;
 	col.scol = GELB;
