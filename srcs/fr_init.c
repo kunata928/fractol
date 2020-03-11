@@ -16,10 +16,17 @@ void		fr_init(t_fr *fr)
 {
 	fr->mlx = mlx_init();
 	fr->iter = MAX_ITERATION;
+	fr->current.i = 0;
+	fr->current.r = 0;
+	fr->scale = 1;
+	fr->scale_shift_x = 0;
+	fr->scale_shift_y = 0;
 	fr->shift_x = 0;
 	fr->shift_y = 0;
 	fr->contr.prev_x = 0;
 	fr->contr.prev_y = 0;
+	fr->prev_center.r = WINSIZEX / 2;
+	fr->prev_center.i = WINSIZEY / 2;
 	fr->contr.left_button = FALSE;
 	fr->color = (int *)ft_memalloc(sizeof(int) * (fr->iter + 1));
 	fr_set_color(fr);

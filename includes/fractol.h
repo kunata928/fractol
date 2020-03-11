@@ -36,10 +36,11 @@
 # define GELB				0xF3D476
 # define ROT				0x622C40
 # define BLAU				0x06062C
-//0x06062C
+
 # define WINSIZEX			700
 # define WINSIZEY			700
 # define MAX_ITERATION		255
+# define D_SCALE			0.5
 
 # define TRUE				1
 # define FALSE				0
@@ -48,7 +49,6 @@
 # define MOUSE_BUTTON_MID	3
 # define MOUSE_LEFT_BUTTON	1
 # define MOUSE_RIGHT_BUTTON	2
-
 # define KEY_ESC			53
 # define KEY_CTRL_LEFT		256
 # define KEY_SHIFT_LEFT		257
@@ -113,6 +113,8 @@ typedef struct		s_fr
 {
 	t_contr			contr;
 	t_pnt			pnt;
+	t_pnt			current;
+	t_pnt			prev_center;
 
 	void			*mlx;
 	void			*win;
@@ -126,6 +128,8 @@ typedef struct		s_fr
 
 	int				iter;
 	double			scale;
+	int				scale_shift_x;
+	int				scale_shift_y;
 	int				shift_x;
 	int				shift_y;
 	
@@ -152,6 +156,7 @@ void				fr_plot(t_fr *fr);
 
 void				fr_set_color(t_fr *fr);
 
-void				fdf_info_static0(t_fr *fr);
+void				fr_info_static0(t_fr *fr);
+void				fr_info_static1(t_fr *fr, char *txt);
 
 #endif

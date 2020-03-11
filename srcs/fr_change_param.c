@@ -14,7 +14,15 @@
 
 void			fr_scale_image(int keycode, t_fr *fr, int x, int y)
 {
-
+	if (keycode == MOUSE_SCROLL_UP)
+		fr->scale += D_SCALE;
+	if (keycode == MOUSE_SCROLL_DOWN)
+		fr->scale -= D_SCALE;
+	fr->scale_shift_x += x - fr->prev_center.r;
+	fr->scale_shift_y += y - fr->prev_center.i;
+	fr->prev_center.r += fr->scale_shift_x;
+	fr->prev_center.i += fr->scale_shift_y;
+	fr_plot(fr);
 }
 
 void		fr_change_iter(t_fr *fr, int keycode)
