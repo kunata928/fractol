@@ -25,8 +25,9 @@ void		fr_init(t_fr *fr)
 	fr->shift_y = 0;
 	fr->contr.prev_x = 0;
 	fr->contr.prev_y = 0;
-	fr->prev_center.r = WINSIZEX / 2;
-	fr->prev_center.i = WINSIZEY / 2;
+	fr->prev_center.r = 1;
+	fr->prev_center.i = 1;
+	fr->k = (double)4 / (WINSIZEX);
 	fr->contr.left_button = FALSE;
 	fr->color = (int *)ft_memalloc(sizeof(int) * (fr->iter + 1));
 	fr_set_color(fr);

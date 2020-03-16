@@ -11,3 +11,40 @@
 /* ************************************************************************** */
 
 #include "../includes/fractol.h"
+
+
+
+//for +- zoom without mouse
+void	fr_plot(t_fr *fr)
+{
+	int		i;
+	double	dr;
+	double	di;
+	double	k;
+
+	i = 0;
+	k = (double)(4 * fr->scale) / WINSIZEX;
+	dr = fr->shift_x * k;
+	di = fr->shift_y * k;
+
+	fr->img_ptr = mlx_new_image(fr->mlx, WINSIZEX, WINSIZEY);
+	fr->image = mlx_get_data_addr(fr->img_ptr, &fr->bpp,
+			&fr->s_line, &fr->endian);
+	fr->pnt.r = -2 * fr->scale  + dr;// + fr->scale_shift_x;
+	fr->pnt.i = -2 * fr->scale + di;// + fr->scale_shift_y;
+	while (i < WINSIZEX * WINSIZEY)
+	{
+		if (i % WINSIZEX == 0)
+		{
+			fr->pnt.r = -2 * fr->scale + dr;// + fr->scale_shift_x;
+			fr->pnt.i = fr->pnt.i + k;
+		}
+		*(int*)(fr->image + (int)(i % WINSIZEX) * 4 +
+				(int)(i / WINSIZEX) * fr->s_line) = fr_eval(fr->pnt, fr->pnt, fr);
+		fr->pnt.r = fr->pnt.r + k;
+		i++;
+	}
+	mlx_put_image_to_window(fr->mlx, fr->win, fr->img_ptr, 0, 0);
+	mlx_destroy_image(fr->mlx, fr->img_ptr);
+	fr_info_static0(fr);
+}

@@ -37,19 +37,21 @@ void	fr_plot(t_fr *fr)
 	double	k;
 
 	i = 0;
-	k = (double)4 / (WINSIZEX * fr->scale);
-	dr = (double)fr->shift_x / 250 + (double)fr->scale_shift_x / 250;
-	di = (double)fr->shift_y / 250 + (double)fr->scale_shift_y / 250;
+	k = (double)(4 * fr->scale) / WINSIZEX;
+	dr = fr->shift_x * k;
+	di = fr->shift_y * k;
+
+	fr->k = k;
 	fr->img_ptr = mlx_new_image(fr->mlx, WINSIZEX, WINSIZEY);
 	fr->image = mlx_get_data_addr(fr->img_ptr, &fr->bpp,
 			&fr->s_line, &fr->endian);
-	fr->pnt.r = (-2 + dr);
-	fr->pnt.i = (-2 + di);
+	fr->pnt.r = -2 * fr->scale  + dr + fr->scale_shift_x;
+	fr->pnt.i = -2 * fr->scale + di + fr->scale_shift_y;
 	while (i < WINSIZEX * WINSIZEY)
 	{
 		if (i % WINSIZEX == 0)
 		{
-			fr->pnt.r = -2 + dr;
+			fr->pnt.r = -2 * fr->scale + dr + fr->scale_shift_x;
 			fr->pnt.i = fr->pnt.i + k;
 		}
 		*(int*)(fr->image + (int)(i % WINSIZEX) * 4 +

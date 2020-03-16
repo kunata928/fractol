@@ -12,16 +12,25 @@
 
 #include "../includes/fractol.h"
 
-void			fr_scale_image(int keycode, t_fr *fr, int x, int y)
+void			fr_scale_image(t_fr *fr, int keycode, int x, int y)
 {
+	double prev;
+
 	if (keycode == MOUSE_SCROLL_UP)
-		fr->scale += D_SCALE;
+	{
+		fr->scale *= D_SCALE;
+		//fr->k =
+		prev = (double)(4 * fr->scale) / WINSIZEX;;
+		fr->scale_shift_x = ((double)WINSIZEX / 2 - x) * prev;
+		fr->scale_shift_y = ((double)WINSIZEY / 2 - y) * prev;
+	}
 	if (keycode == MOUSE_SCROLL_DOWN)
-		fr->scale -= D_SCALE;
-	fr->scale_shift_x += x - fr->prev_center.r;
-	fr->scale_shift_y += y - fr->prev_center.i;
-	fr->prev_center.r += fr->scale_shift_x;
-	fr->prev_center.i += fr->scale_shift_y;
+	{
+		fr->scale /= D_SCALE;
+		prev = (double)(4 * fr->scale) / WINSIZEX;
+		fr->scale_shift_x = ((double)WINSIZEX / 2 - x) * prev;
+		fr->scale_shift_y = ((double)WINSIZEY / 2 - y) * prev;
+	}
 	fr_plot(fr);
 }
 

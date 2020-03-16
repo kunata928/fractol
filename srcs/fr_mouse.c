@@ -15,7 +15,7 @@
 int		fr_mouse_press(int button, int x, int y, t_fr *fr)
 {
 	if (button == MOUSE_SCROLL_UP || button == MOUSE_SCROLL_DOWN)
-		fr_scale_image(button, fr, x, y);
+		fr_scale_image(fr, button, x, y);
 	else if (button == MOUSE_LEFT_BUTTON)
 		fr->contr.left_button = TRUE;
 	return (0);

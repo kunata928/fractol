@@ -40,7 +40,7 @@
 # define WINSIZEX			700
 # define WINSIZEY			700
 # define MAX_ITERATION		255
-# define D_SCALE			0.5
+# define D_SCALE			1.15
 
 # define TRUE				1
 # define FALSE				0
@@ -128,10 +128,11 @@ typedef struct		s_fr
 
 	int				iter;
 	double			scale;
-	int				scale_shift_x;
-	int				scale_shift_y;
+	double			scale_shift_x;
+	double			scale_shift_y;
 	int				shift_x;
 	int				shift_y;
+	double			k;
 	
 }					t_fr;
 
@@ -149,7 +150,7 @@ int					fr_mouse_check(int button, int x, int y, t_fr *fr);
 int					fr_mouse_press(int button, int x, int y, t_fr *fr);
 int					fr_mouse_move(int x, int y, t_fr *fr);
 
-void				fr_scale_image(int keycode, t_fr *fr, int x, int y);
+void				fr_scale_image(t_fr *fr, int keycode, int x, int y);
 void				fr_change_iter(t_fr *fr, int keycode);
 
 void				fr_plot(t_fr *fr);
