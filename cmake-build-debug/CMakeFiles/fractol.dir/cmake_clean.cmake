@@ -7,6 +7,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/fractol.dir/srcs/fr_menu.c.o"
   "CMakeFiles/fractol.dir/srcs/fr_mouse.c.o"
   "CMakeFiles/fractol.dir/srcs/fr_plot.c.o"
+  "CMakeFiles/fractol.dir/srcs/fr_thread.c.o"
   "CMakeFiles/fractol.dir/srcs/ft_change_map.c.o"
   "CMakeFiles/fractol.dir/srcs/main.c.o"
   "fractol"

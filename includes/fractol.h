@@ -15,7 +15,7 @@
 # define FRACTOL_H
 
 # include <stdio.h>
-
+# include <pthread.h>
 # include <unistd.h>
 # include <fcntl.h>
 # include <math.h>
@@ -33,6 +33,10 @@
 # define TEXT_COL1			0xAF6C93
 # define TEXT_COL2			0xD54E94
 
+# define JULIA              0
+# define MANDELBROT         1
+# define RANDOM             2
+
 # define GELB				0xF3D476
 # define ROT				0x622C40
 # define BLAU				0x06062C
@@ -41,6 +45,7 @@
 # define WINSIZEY			700
 # define MAX_ITERATION		255
 # define D_SCALE			1.15
+# define THREADS            3
 
 # define TRUE				1
 # define FALSE				0
@@ -123,7 +128,7 @@ typedef struct		s_fr
 	int				bpp;
 	int				s_line;
 	int				endian;
-	char			*map_name;
+	int 			name;
 	int				*color;
 
 	int				iter;
@@ -135,6 +140,13 @@ typedef struct		s_fr
 	double			k;
 	
 }					t_fr;
+
+typedef struct      s_datas
+{
+    int             start_x;
+    int             end_x;
+    t_fr            *fr;
+}                   t_datas;
 
 int					fr_key_press(int keycode, t_fr *fr);
 
@@ -151,13 +163,20 @@ int					fr_mouse_press(int button, int x, int y, t_fr *fr);
 int					fr_mouse_move(int x, int y, t_fr *fr);
 
 void				fr_scale_image(t_fr *fr, int keycode, int x, int y);
-void				fr_change_iter(t_fr *fr, int keycode);
+void            	fr_change_iter(t_fr *fr, int keycode);
 
-void				fr_plot(t_fr *fr);
+void                plot_image(t_fr *fr);
+void		        fr_color_mbrot(t_pnt pnt, t_pnt s, t_fr *fr);
+void				fr_thread_mandelbrot(void *thread_data);
+void                fr_thread_julia(void *thread_data);
 
 void				fr_set_color(t_fr *fr);
 
 void				fr_info_static0(t_fr *fr);
 void				fr_info_static1(t_fr *fr, char *txt);
+
+void			    fr_evaluate(t_fr *fr);
+void			    fr_thread_selection(int i, t_datas *data, pthread_t *threads);
+
 
 #endif

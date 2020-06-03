@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/pmelodi/Projects/fractol
+/private/var/folders/pd/fv1ft81x6k9dtd38k4309yl40000gq/T/AppTranslocation/7A9EC675-A5EA-4DDF-8535-F724786FB671/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/natasha/CLionProjects/fractol
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/pmelodi/Projects/fractol/cmake-build-debug
+-- Build files have been written to: /Users/natasha/CLionProjects/fractol/cmake-build-debug

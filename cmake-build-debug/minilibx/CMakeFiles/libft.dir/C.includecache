@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/pmelodi/Projects/fractol/libft/includes/get_next_line.h
+/Users/natasha/CLionProjects/fractol/libft/includes/get_next_line.h
 unistd.h
 -
 stdlib.h
@@ -16,9 +16,9 @@ fcntl.h
 stdio.h
 -
 libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 string.h
 -
 unistd.h
@@ -26,263 +26,263 @@ unistd.h
 stdlib.h
 -
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_atoi.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_atoi.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_bzero.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_bzero.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_cnt_words.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_cnt_words.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_cntchr.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_cntchr.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_isalnum.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_isalnum.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_isalpha.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_isalpha.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_isascii.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_isascii.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_isdigit.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_isdigit.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_isprint.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_isprint.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_iswhitespace.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_iswhitespace.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_iterative_power.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_iterative_power.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_itoa.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_itoa.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_lstadd.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_lstadd.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_lstdel.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_lstdel.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_lstdelone.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_lstdelone.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_lstiter.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_lstiter.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_lstlen.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_lstlen.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_lstmap.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_lstmap.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_lstnew.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_lstnew.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_memalloc.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_memalloc.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_memccpy.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_memccpy.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_memchr.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_memchr.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_memcmp.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_memcmp.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_memcpy.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_memcpy.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_memdel.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_memdel.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_memmove.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_memmove.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_memset.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_memset.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_numlen.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_numlen.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_putchar.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_putchar.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_putchar_fd.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_putchar_fd.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_putendl.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_putendl.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_putendl_fd.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_putendl_fd.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_putnbr.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_putnbr.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_putnbr_fd.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_putnbr_fd.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_putstr.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_putstr.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_putstr_fd.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_putstr_fd.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_strcat.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_strcat.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_strchr.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_strchr.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_strclr.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_strclr.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_strcmp.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_strcmp.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_strcpy.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_strcpy.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_strdel.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_strdel.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_strdup.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_strdup.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_strequ.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_strequ.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_striter.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_striter.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_striteri.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_striteri.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_strjoin.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_strjoin.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_strlcat.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_strlcat.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_strlen.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_strlen.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_strmap.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_strmap.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_strmapi.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_strmapi.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_strncat.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_strncat.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_strncmp.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_strncmp.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_strncpy.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_strncpy.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_strnequ.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_strnequ.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_strnew.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_strnew.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_strnstr.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_strnstr.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_strrchr.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_strrchr.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_strsplit.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_strsplit.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_strstr.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_strstr.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_strsub.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_strsub.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_strtrim.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_strtrim.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_tolower.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_tolower.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/ft_toupper.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/ft_toupper.c
 ../includes/libft.h
-/Users/pmelodi/Projects/fractol/libft/includes/libft.h
+/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/pmelodi/Projects/fractol/libft/srcs/get_next_line.c
+/Users/natasha/CLionProjects/fractol/libft/srcs/get_next_line.c
 ../includes/get_next_line.h
-/Users/pmelodi/Projects/fractol/libft/includes/get_next_line.h
+/Users/natasha/CLionProjects/fractol/libft/includes/get_next_line.h
 

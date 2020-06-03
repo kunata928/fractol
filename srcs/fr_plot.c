@@ -12,7 +12,7 @@
 
 #include "../includes/fractol.h"
 
-int		fr_eval(t_pnt pnt, t_pnt s, t_fr *fr)
+void	fr_color_mbrot(t_pnt pnt, t_pnt s, t_fr *fr)
 {
 	int		i;
 	t_pnt	tmp;
@@ -26,40 +26,72 @@ int		fr_eval(t_pnt pnt, t_pnt s, t_fr *fr)
 		pnt.i = tmp.i;
 		i++;
 	}
-	return (fr->color[i]);
+    *(int*)(fr->image + (int)(i % WINSIZEX) * 4 +
+            (int)(i / WINSIZEX) * fr->s_line) = fr->color[i];
 }
 
-void	fr_plot(t_fr *fr)
+void    plot_image(t_fr *fr)
+{
+    fr->img_ptr = mlx_new_image(fr->mlx, WINSIZEX, WINSIZEY);
+    fr->image = mlx_get_data_addr(fr->img_ptr, &fr->bpp,
+                                  &fr->s_line, &fr->endian);
+    fr_evaluate(fr);
+    mlx_put_image_to_window(fr->mlx, fr->win, fr->img_ptr, 0, 0);
+    mlx_destroy_image(fr->mlx, fr->img_ptr);
+    fr_info_static0(fr);
+}
+
+void	fr_thread_mandelbrot(void *thread_data)
 {
 	int		i;
-	double	dr;
-	double	di;
+	int     j;
 	double	k;
+	t_datas *data;
 
-	i = 0;
+	data = (t_datas *)thread_data;
+	i = data->start_x;
 	k = (double)(4 * fr->scale) / WINSIZEX;
-	dr = fr->shift_x * k;
-	di = fr->shift_y * k;
-
 	fr->k = k;
-	fr->img_ptr = mlx_new_image(fr->mlx, WINSIZEX, WINSIZEY);
-	fr->image = mlx_get_data_addr(fr->img_ptr, &fr->bpp,
-			&fr->s_line, &fr->endian);
-	fr->pnt.r = -2 * fr->scale  + dr + fr->scale_shift_x;
-	fr->pnt.i = -2 * fr->scale + di + fr->scale_shift_y;
-	while (i < WINSIZEX * WINSIZEY)
+	fr->pnt.r = -2 * fr->scale  + fr->shift_x * k + fr->scale_shift_x;
+	fr->pnt.i = -2 * fr->scale + fr->shift_y * k + fr->scale_shift_y;
+	while (i < data->end_x)
 	{
+	    j = 0;
+	    while (j < WINSIZEY)
+	    {
+
+	        j++;
+	    }
 		if (i % WINSIZEX == 0)
 		{
-			fr->pnt.r = -2 * fr->scale + dr + fr->scale_shift_x;
+			fr->pnt.r = -2 * fr->scale + fr->shift_x * k + fr->scale_shift_x;
 			fr->pnt.i = fr->pnt.i + k;
 		}
-		*(int*)(fr->image + (int)(i % WINSIZEX) * 4 +
-				(int)(i / WINSIZEX) * fr->s_line) = fr_eval(fr->pnt, fr->pnt, fr);
+        fr_color_mbrot(fr->pnt, fr->pnt, data->fr);
 		fr->pnt.r = fr->pnt.r + k;
 		i++;
 	}
-	mlx_put_image_to_window(fr->mlx, fr->win, fr->img_ptr, 0, 0);
-	mlx_destroy_image(fr->mlx, fr->img_ptr);
-	fr_info_static0(fr);
 }
+
+//void     fr_thread_julia(void *thread_data);
+//int		i;
+//double	k;
+//t_datas *data;
+//
+//data = (t_datas *)thread_data;
+//i = 0;
+//k = (double)(4 * fr->scale) / WINSIZEX;
+//fr->k = k;
+//fr->pnt.r = -2 * fr->scale  + fr->shift_x * k + fr->scale_shift_x;
+//fr->pnt.i = -2 * fr->scale + fr->shift_y * k + fr->scale_shift_y;
+//while (i < WINSIZEX * WINSIZEY)
+//{
+//if (i % WINSIZEX == 0)
+//{
+//fr->pnt.r = -2 * fr->scale + fr->shift_x * k + fr->scale_shift_x;
+//fr->pnt.i = fr->pnt.i + k;
+//}
+//fr_color_mbrot(fr->pnt, fr->pnt, fr);
+//fr->pnt.r = fr->pnt.r + k;
+//i++;
+//}
