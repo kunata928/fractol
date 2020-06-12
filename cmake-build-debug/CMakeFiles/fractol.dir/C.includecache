@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/natasha/CLionProjects/fractol/includes/fractol.h
+/Users/Student/CLionProjects/fractol/includes/fractol.h
 stdio.h
 -
 pthread.h
@@ -20,13 +20,13 @@ math.h
 stdlib.h
 -
 ../includes/mlx.h
-/Users/natasha/CLionProjects/fractol/includes/mlx.h
+/Users/Student/CLionProjects/fractol/includes/mlx.h
 ../libft/includes/libft.h
-/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
+/Users/Student/CLionProjects/fractol/libft/includes/libft.h
 
-/Users/natasha/CLionProjects/fractol/includes/mlx.h
+/Users/Student/CLionProjects/fractol/includes/mlx.h
 
-/Users/natasha/CLionProjects/fractol/libft/includes/libft.h
+/Users/Student/CLionProjects/fractol/libft/includes/libft.h
 string.h
 -
 unistd.h
@@ -34,7 +34,7 @@ unistd.h
 stdlib.h
 -
 
-/Users/natasha/CLionProjects/fractol/srcs/fr_plot.c
+/Users/Student/CLionProjects/fractol/srcs/main.c
 ../includes/fractol.h
-/Users/natasha/CLionProjects/fractol/includes/fractol.h
+/Users/Student/CLionProjects/fractol/includes/fractol.h
 

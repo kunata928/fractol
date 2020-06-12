@@ -1,4 +1,18 @@
-/private/var/folders/pd/fv1ft81x6k9dtd38k4309yl40000gq/T/AppTranslocation/7A9EC675-A5EA-4DDF-8535-F724786FB671/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/natasha/CLionProjects/fractol
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/Student/CLionProjects/fractol
+-- The C compiler identification is AppleClang 11.0.0.11000033
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- The CXX compiler identification is AppleClang 11.0.0.11000033
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/natasha/CLionProjects/fractol/cmake-build-debug
+-- Build files have been written to: /Users/Student/CLionProjects/fractol/cmake-build-debug

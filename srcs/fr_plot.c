@@ -41,39 +41,35 @@ void    plot_image(t_fr *fr)
     fr_info_static0(fr);
 }
 
-void	fr_thread_mandelbrot(void *thread_data)
+void	*fr_thread_mandelbrot(void *thread_data)
 {
-	int		i;
-	int     j;
-	double	k;
+	int		x;
+	int     y;
+	t_pnt   c;
 	t_datas *data;
 
 	data = (t_datas *)thread_data;
-	i = data->start_x;
-	k = (double)(4 * fr->scale) / WINSIZEX;
-	fr->k = k;
-	fr->pnt.r = -2 * fr->scale  + fr->shift_x * k + fr->scale_shift_x;
-	fr->pnt.i = -2 * fr->scale + fr->shift_y * k + fr->scale_shift_y;
-	while (i < data->end_x)
+	x = data->start_x;
+//	k = (double)(4 * fr->scale) / WINSIZEX;
+//	fr->k = k;
+    c.i = 0;
+    c.r = 0;
+	while (x < data->end_x)
 	{
-	    j = 0;
-	    while (j < WINSIZEY)
+	    y = 0;
+	    data->fr->pnt.r = (double)(x + data->fr->shift_x) / data->fr->scale;
+	    while (y < WINSIZEY)
 	    {
-
-	        j++;
+	        data->fr->pnt.i = (double)(y + data->fr->shift_y) / data->fr->scale;
+            fr_color_mbrot(data->fr->pnt, c, data->fr);
+	        y++;
 	    }
-		if (i % WINSIZEX == 0)
-		{
-			fr->pnt.r = -2 * fr->scale + fr->shift_x * k + fr->scale_shift_x;
-			fr->pnt.i = fr->pnt.i + k;
-		}
-        fr_color_mbrot(fr->pnt, fr->pnt, data->fr);
-		fr->pnt.r = fr->pnt.r + k;
-		i++;
+		x++;
 	}
 }
 
-//void     fr_thread_julia(void *thread_data);
+void     fr_thread_julia(void *thread_data);
+
 //int		i;
 //double	k;
 //t_datas *data;

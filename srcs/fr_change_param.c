@@ -31,7 +31,7 @@ void			fr_scale_image(t_fr *fr, int keycode, int x, int y)
 		fr->scale_shift_x = ((double)WINSIZEX / 2 - x) * prev;
 		fr->scale_shift_y = ((double)WINSIZEY / 2 - y) * prev;
 	}
-	fr_plot(fr);
+	plot_image(fr);
 }
 
 void		fr_change_iter(t_fr *fr, int keycode)
@@ -55,5 +55,5 @@ void		fr_change_iter(t_fr *fr, int keycode)
 	if (fr->iter > MAX_ITERATION)
 		fr->iter = MAX_ITERATION;
 	fr_set_color(fr);
-	fr_plot(fr);
+	plot_image(fr);
 }

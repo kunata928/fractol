@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /private/var/folders/pd/fv1ft81x6k9dtd38k4309yl40000gq/T/AppTranslocation/7A9EC675-A5EA-4DDF-8535-F724786FB671/d/CLion.app/Contents/bin/cmake/mac/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /private/var/folders/pd/fv1ft81x6k9dtd38k4309yl40000gq/T/AppTranslocation/7A9EC675-A5EA-4DDF-8535-F724786FB671/d/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/natasha/CLionProjects/fractol
+CMAKE_SOURCE_DIR = /Users/Student/CLionProjects/fractol
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/natasha/CLionProjects/fractol/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/Student/CLionProjects/fractol/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/fractol.dir/depend.make
@@ -59,146 +59,146 @@ include CMakeFiles/fractol.dir/flags.make
 
 CMakeFiles/fractol.dir/srcs/main.c.o: CMakeFiles/fractol.dir/flags.make
 CMakeFiles/fractol.dir/srcs/main.c.o: ../srcs/main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/natasha/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/fractol.dir/srcs/main.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/main.c.o   -c /Users/natasha/CLionProjects/fractol/srcs/main.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/fractol.dir/srcs/main.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/main.c.o   -c /Users/Student/CLionProjects/fractol/srcs/main.c
 
 CMakeFiles/fractol.dir/srcs/main.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractol.dir/srcs/main.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/natasha/CLionProjects/fractol/srcs/main.c > CMakeFiles/fractol.dir/srcs/main.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Student/CLionProjects/fractol/srcs/main.c > CMakeFiles/fractol.dir/srcs/main.c.i
 
 CMakeFiles/fractol.dir/srcs/main.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractol.dir/srcs/main.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/natasha/CLionProjects/fractol/srcs/main.c -o CMakeFiles/fractol.dir/srcs/main.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Student/CLionProjects/fractol/srcs/main.c -o CMakeFiles/fractol.dir/srcs/main.c.s
 
 CMakeFiles/fractol.dir/srcs/error.c.o: CMakeFiles/fractol.dir/flags.make
 CMakeFiles/fractol.dir/srcs/error.c.o: ../srcs/error.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/natasha/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/fractol.dir/srcs/error.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/error.c.o   -c /Users/natasha/CLionProjects/fractol/srcs/error.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/fractol.dir/srcs/error.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/error.c.o   -c /Users/Student/CLionProjects/fractol/srcs/error.c
 
 CMakeFiles/fractol.dir/srcs/error.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractol.dir/srcs/error.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/natasha/CLionProjects/fractol/srcs/error.c > CMakeFiles/fractol.dir/srcs/error.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Student/CLionProjects/fractol/srcs/error.c > CMakeFiles/fractol.dir/srcs/error.c.i
 
 CMakeFiles/fractol.dir/srcs/error.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractol.dir/srcs/error.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/natasha/CLionProjects/fractol/srcs/error.c -o CMakeFiles/fractol.dir/srcs/error.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Student/CLionProjects/fractol/srcs/error.c -o CMakeFiles/fractol.dir/srcs/error.c.s
 
 CMakeFiles/fractol.dir/srcs/fr_keyboard.c.o: CMakeFiles/fractol.dir/flags.make
 CMakeFiles/fractol.dir/srcs/fr_keyboard.c.o: ../srcs/fr_keyboard.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/natasha/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/fractol.dir/srcs/fr_keyboard.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/fr_keyboard.c.o   -c /Users/natasha/CLionProjects/fractol/srcs/fr_keyboard.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/fractol.dir/srcs/fr_keyboard.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/fr_keyboard.c.o   -c /Users/Student/CLionProjects/fractol/srcs/fr_keyboard.c
 
 CMakeFiles/fractol.dir/srcs/fr_keyboard.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractol.dir/srcs/fr_keyboard.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/natasha/CLionProjects/fractol/srcs/fr_keyboard.c > CMakeFiles/fractol.dir/srcs/fr_keyboard.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Student/CLionProjects/fractol/srcs/fr_keyboard.c > CMakeFiles/fractol.dir/srcs/fr_keyboard.c.i
 
 CMakeFiles/fractol.dir/srcs/fr_keyboard.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractol.dir/srcs/fr_keyboard.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/natasha/CLionProjects/fractol/srcs/fr_keyboard.c -o CMakeFiles/fractol.dir/srcs/fr_keyboard.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Student/CLionProjects/fractol/srcs/fr_keyboard.c -o CMakeFiles/fractol.dir/srcs/fr_keyboard.c.s
 
 CMakeFiles/fractol.dir/srcs/ft_change_map.c.o: CMakeFiles/fractol.dir/flags.make
 CMakeFiles/fractol.dir/srcs/ft_change_map.c.o: ../srcs/ft_change_map.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/natasha/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/fractol.dir/srcs/ft_change_map.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/ft_change_map.c.o   -c /Users/natasha/CLionProjects/fractol/srcs/ft_change_map.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/fractol.dir/srcs/ft_change_map.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/ft_change_map.c.o   -c /Users/Student/CLionProjects/fractol/srcs/ft_change_map.c
 
 CMakeFiles/fractol.dir/srcs/ft_change_map.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractol.dir/srcs/ft_change_map.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/natasha/CLionProjects/fractol/srcs/ft_change_map.c > CMakeFiles/fractol.dir/srcs/ft_change_map.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Student/CLionProjects/fractol/srcs/ft_change_map.c > CMakeFiles/fractol.dir/srcs/ft_change_map.c.i
 
 CMakeFiles/fractol.dir/srcs/ft_change_map.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractol.dir/srcs/ft_change_map.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/natasha/CLionProjects/fractol/srcs/ft_change_map.c -o CMakeFiles/fractol.dir/srcs/ft_change_map.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Student/CLionProjects/fractol/srcs/ft_change_map.c -o CMakeFiles/fractol.dir/srcs/ft_change_map.c.s
 
 CMakeFiles/fractol.dir/srcs/fr_init.c.o: CMakeFiles/fractol.dir/flags.make
 CMakeFiles/fractol.dir/srcs/fr_init.c.o: ../srcs/fr_init.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/natasha/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/fractol.dir/srcs/fr_init.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/fr_init.c.o   -c /Users/natasha/CLionProjects/fractol/srcs/fr_init.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/fractol.dir/srcs/fr_init.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/fr_init.c.o   -c /Users/Student/CLionProjects/fractol/srcs/fr_init.c
 
 CMakeFiles/fractol.dir/srcs/fr_init.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractol.dir/srcs/fr_init.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/natasha/CLionProjects/fractol/srcs/fr_init.c > CMakeFiles/fractol.dir/srcs/fr_init.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Student/CLionProjects/fractol/srcs/fr_init.c > CMakeFiles/fractol.dir/srcs/fr_init.c.i
 
 CMakeFiles/fractol.dir/srcs/fr_init.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractol.dir/srcs/fr_init.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/natasha/CLionProjects/fractol/srcs/fr_init.c -o CMakeFiles/fractol.dir/srcs/fr_init.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Student/CLionProjects/fractol/srcs/fr_init.c -o CMakeFiles/fractol.dir/srcs/fr_init.c.s
 
 CMakeFiles/fractol.dir/srcs/fr_plot.c.o: CMakeFiles/fractol.dir/flags.make
 CMakeFiles/fractol.dir/srcs/fr_plot.c.o: ../srcs/fr_plot.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/natasha/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/fractol.dir/srcs/fr_plot.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/fr_plot.c.o   -c /Users/natasha/CLionProjects/fractol/srcs/fr_plot.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/fractol.dir/srcs/fr_plot.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/fr_plot.c.o   -c /Users/Student/CLionProjects/fractol/srcs/fr_plot.c
 
 CMakeFiles/fractol.dir/srcs/fr_plot.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractol.dir/srcs/fr_plot.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/natasha/CLionProjects/fractol/srcs/fr_plot.c > CMakeFiles/fractol.dir/srcs/fr_plot.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Student/CLionProjects/fractol/srcs/fr_plot.c > CMakeFiles/fractol.dir/srcs/fr_plot.c.i
 
 CMakeFiles/fractol.dir/srcs/fr_plot.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractol.dir/srcs/fr_plot.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/natasha/CLionProjects/fractol/srcs/fr_plot.c -o CMakeFiles/fractol.dir/srcs/fr_plot.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Student/CLionProjects/fractol/srcs/fr_plot.c -o CMakeFiles/fractol.dir/srcs/fr_plot.c.s
 
 CMakeFiles/fractol.dir/srcs/fr_mouse.c.o: CMakeFiles/fractol.dir/flags.make
 CMakeFiles/fractol.dir/srcs/fr_mouse.c.o: ../srcs/fr_mouse.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/natasha/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/fractol.dir/srcs/fr_mouse.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/fr_mouse.c.o   -c /Users/natasha/CLionProjects/fractol/srcs/fr_mouse.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/fractol.dir/srcs/fr_mouse.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/fr_mouse.c.o   -c /Users/Student/CLionProjects/fractol/srcs/fr_mouse.c
 
 CMakeFiles/fractol.dir/srcs/fr_mouse.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractol.dir/srcs/fr_mouse.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/natasha/CLionProjects/fractol/srcs/fr_mouse.c > CMakeFiles/fractol.dir/srcs/fr_mouse.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Student/CLionProjects/fractol/srcs/fr_mouse.c > CMakeFiles/fractol.dir/srcs/fr_mouse.c.i
 
 CMakeFiles/fractol.dir/srcs/fr_mouse.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractol.dir/srcs/fr_mouse.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/natasha/CLionProjects/fractol/srcs/fr_mouse.c -o CMakeFiles/fractol.dir/srcs/fr_mouse.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Student/CLionProjects/fractol/srcs/fr_mouse.c -o CMakeFiles/fractol.dir/srcs/fr_mouse.c.s
 
 CMakeFiles/fractol.dir/srcs/fr_change_param.c.o: CMakeFiles/fractol.dir/flags.make
 CMakeFiles/fractol.dir/srcs/fr_change_param.c.o: ../srcs/fr_change_param.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/natasha/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/fractol.dir/srcs/fr_change_param.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/fr_change_param.c.o   -c /Users/natasha/CLionProjects/fractol/srcs/fr_change_param.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/fractol.dir/srcs/fr_change_param.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/fr_change_param.c.o   -c /Users/Student/CLionProjects/fractol/srcs/fr_change_param.c
 
 CMakeFiles/fractol.dir/srcs/fr_change_param.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractol.dir/srcs/fr_change_param.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/natasha/CLionProjects/fractol/srcs/fr_change_param.c > CMakeFiles/fractol.dir/srcs/fr_change_param.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Student/CLionProjects/fractol/srcs/fr_change_param.c > CMakeFiles/fractol.dir/srcs/fr_change_param.c.i
 
 CMakeFiles/fractol.dir/srcs/fr_change_param.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractol.dir/srcs/fr_change_param.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/natasha/CLionProjects/fractol/srcs/fr_change_param.c -o CMakeFiles/fractol.dir/srcs/fr_change_param.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Student/CLionProjects/fractol/srcs/fr_change_param.c -o CMakeFiles/fractol.dir/srcs/fr_change_param.c.s
 
 CMakeFiles/fractol.dir/srcs/fr_color.c.o: CMakeFiles/fractol.dir/flags.make
 CMakeFiles/fractol.dir/srcs/fr_color.c.o: ../srcs/fr_color.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/natasha/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/fractol.dir/srcs/fr_color.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/fr_color.c.o   -c /Users/natasha/CLionProjects/fractol/srcs/fr_color.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/fractol.dir/srcs/fr_color.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/fr_color.c.o   -c /Users/Student/CLionProjects/fractol/srcs/fr_color.c
 
 CMakeFiles/fractol.dir/srcs/fr_color.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractol.dir/srcs/fr_color.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/natasha/CLionProjects/fractol/srcs/fr_color.c > CMakeFiles/fractol.dir/srcs/fr_color.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Student/CLionProjects/fractol/srcs/fr_color.c > CMakeFiles/fractol.dir/srcs/fr_color.c.i
 
 CMakeFiles/fractol.dir/srcs/fr_color.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractol.dir/srcs/fr_color.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/natasha/CLionProjects/fractol/srcs/fr_color.c -o CMakeFiles/fractol.dir/srcs/fr_color.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Student/CLionProjects/fractol/srcs/fr_color.c -o CMakeFiles/fractol.dir/srcs/fr_color.c.s
 
 CMakeFiles/fractol.dir/srcs/fr_menu.c.o: CMakeFiles/fractol.dir/flags.make
 CMakeFiles/fractol.dir/srcs/fr_menu.c.o: ../srcs/fr_menu.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/natasha/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/fractol.dir/srcs/fr_menu.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/fr_menu.c.o   -c /Users/natasha/CLionProjects/fractol/srcs/fr_menu.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/fractol.dir/srcs/fr_menu.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/fr_menu.c.o   -c /Users/Student/CLionProjects/fractol/srcs/fr_menu.c
 
 CMakeFiles/fractol.dir/srcs/fr_menu.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractol.dir/srcs/fr_menu.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/natasha/CLionProjects/fractol/srcs/fr_menu.c > CMakeFiles/fractol.dir/srcs/fr_menu.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Student/CLionProjects/fractol/srcs/fr_menu.c > CMakeFiles/fractol.dir/srcs/fr_menu.c.i
 
 CMakeFiles/fractol.dir/srcs/fr_menu.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractol.dir/srcs/fr_menu.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/natasha/CLionProjects/fractol/srcs/fr_menu.c -o CMakeFiles/fractol.dir/srcs/fr_menu.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Student/CLionProjects/fractol/srcs/fr_menu.c -o CMakeFiles/fractol.dir/srcs/fr_menu.c.s
 
 CMakeFiles/fractol.dir/srcs/fr_thread.c.o: CMakeFiles/fractol.dir/flags.make
 CMakeFiles/fractol.dir/srcs/fr_thread.c.o: ../srcs/fr_thread.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/natasha/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/fractol.dir/srcs/fr_thread.c.o"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/fr_thread.c.o   -c /Users/natasha/CLionProjects/fractol/srcs/fr_thread.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/fractol.dir/srcs/fr_thread.c.o"
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/fractol.dir/srcs/fr_thread.c.o   -c /Users/Student/CLionProjects/fractol/srcs/fr_thread.c
 
 CMakeFiles/fractol.dir/srcs/fr_thread.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/fractol.dir/srcs/fr_thread.c.i"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/natasha/CLionProjects/fractol/srcs/fr_thread.c > CMakeFiles/fractol.dir/srcs/fr_thread.c.i
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/Student/CLionProjects/fractol/srcs/fr_thread.c > CMakeFiles/fractol.dir/srcs/fr_thread.c.i
 
 CMakeFiles/fractol.dir/srcs/fr_thread.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/fractol.dir/srcs/fr_thread.c.s"
-	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/natasha/CLionProjects/fractol/srcs/fr_thread.c -o CMakeFiles/fractol.dir/srcs/fr_thread.c.s
+	/Library/Developer/CommandLineTools/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/Student/CLionProjects/fractol/srcs/fr_thread.c -o CMakeFiles/fractol.dir/srcs/fr_thread.c.s
 
 # Object files for target fractol
 fractol_OBJECTS = \
@@ -231,7 +231,7 @@ fractol: CMakeFiles/fractol.dir/srcs/fr_thread.c.o
 fractol: CMakeFiles/fractol.dir/build.make
 fractol: minilibx/liblibft.a
 fractol: CMakeFiles/fractol.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/natasha/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable fractol"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Linking C executable fractol"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/fractol.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -244,6 +244,6 @@ CMakeFiles/fractol.dir/clean:
 .PHONY : CMakeFiles/fractol.dir/clean
 
 CMakeFiles/fractol.dir/depend:
-	cd /Users/natasha/CLionProjects/fractol/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/natasha/CLionProjects/fractol /Users/natasha/CLionProjects/fractol /Users/natasha/CLionProjects/fractol/cmake-build-debug /Users/natasha/CLionProjects/fractol/cmake-build-debug /Users/natasha/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/Student/CLionProjects/fractol/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/Student/CLionProjects/fractol /Users/Student/CLionProjects/fractol /Users/Student/CLionProjects/fractol/cmake-build-debug /Users/Student/CLionProjects/fractol/cmake-build-debug /Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/fractol.dir/depend
 

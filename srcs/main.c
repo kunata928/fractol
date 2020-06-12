@@ -19,7 +19,7 @@ int		main(int argc, char **argv)
 	if (fr_read_consol(argc, argv, &fr))
 		fr_not_valid_imput();
 	fr_init(&fr);
-	fr_plot(&fr);
+	plot_image(&fr);
 	mlx_hook(fr.win, 4, 0, fr_mouse_press, &fr);
 	mlx_hook(fr.win, 5, 0, fr_mouse_check, &fr);
 	mlx_hook(fr.win, 6, 0, fr_mouse_move, &fr);
