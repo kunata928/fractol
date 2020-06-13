@@ -18,21 +18,21 @@ void		fr_init(t_fr *fr)
 	fr->iter = MAX_ITERATION;
 	fr->current.i = 0;
 	fr->current.r = 0;
-	fr->scale = 1;
+	fr->scale = 20;
 	fr->scale_shift_x = 0;
 	fr->scale_shift_y = 0;
-	fr->shift_x = 0;
-	fr->shift_y = 0;
+	fr->shift_x = -WINSIZEX / 2;
+	fr->shift_y = -WINSIZEY / 2;
 	fr->contr.prev_x = 0;
 	fr->contr.prev_y = 0;
 	fr->prev_center.r = 1;
 	fr->prev_center.i = 1;
-	fr->k = (double)4 / (WINSIZEX);
+	fr->k = 20;
 	fr->contr.left_button = FALSE;
 	fr->color = (int *)ft_memalloc(sizeof(int) * (fr->iter + 1));
 	fr_set_color(fr);
 	fr->win = mlx_new_window(fr->mlx, WINSIZEX, WINSIZEY, "fractol");
-	//fr->map_name = fr_name_map(fr);
+	fr->name = fr_name_map(fr);
 }
 
 int			fr_init_map(char *map, t_fr *fr)
@@ -40,18 +40,18 @@ int			fr_init_map(char *map, t_fr *fr)
 	if (ft_strlen(map) == 1)
 	{
 		if (*map == 'M' || *map == 'm')
-			fr->contr.map = 1;
+			fr->name = MANDELBROT;
 		else if (*map == 'J' || *map == 'j')
-			fr->contr.map = 2;
+			fr->name = JULIA;
 		else
 			return (1);
 	}
 	else
 	{
 		if (ft_strequ(map, "Mandelbrot") || ft_strequ(map, "mandelbrot"))
-			fr->contr.map = 1;
+			fr->contr.map = MANDELBROT;
 		else if (ft_strequ(map, "Julia") || ft_strequ(map, "julia"))
-			fr->contr.map = 2;
+			fr->contr.map = JULIA;
 		else
 			return (1);
 	}

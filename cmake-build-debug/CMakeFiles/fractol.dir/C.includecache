@@ -34,7 +34,7 @@ unistd.h
 stdlib.h
 -
 
-/Users/Student/CLionProjects/fractol/srcs/main.c
+/Users/Student/CLionProjects/fractol/srcs/fr_init.c
 ../includes/fractol.h
 /Users/Student/CLionProjects/fractol/includes/fractol.h
 

@@ -50,8 +50,6 @@ void	*fr_thread_mandelbrot(void *thread_data)
 
 	data = (t_datas *)thread_data;
 	x = data->start_x;
-//	k = (double)(4 * fr->scale) / WINSIZEX;
-//	fr->k = k;
     c.i = 0;
     c.r = 0;
 	while (x < data->end_x)
@@ -66,6 +64,7 @@ void	*fr_thread_mandelbrot(void *thread_data)
 	    }
 		x++;
 	}
+	return (NULL);
 }
 
 void     fr_thread_julia(void *thread_data);
