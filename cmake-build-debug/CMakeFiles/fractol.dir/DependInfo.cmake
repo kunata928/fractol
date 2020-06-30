@@ -4,17 +4,17 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/Users/Student/CLionProjects/fractol/srcs/error.c" "/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/error.c.o"
-  "/Users/Student/CLionProjects/fractol/srcs/fr_change_param.c" "/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_change_param.c.o"
-  "/Users/Student/CLionProjects/fractol/srcs/fr_color.c" "/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_color.c.o"
-  "/Users/Student/CLionProjects/fractol/srcs/fr_init.c" "/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_init.c.o"
-  "/Users/Student/CLionProjects/fractol/srcs/fr_keyboard.c" "/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_keyboard.c.o"
-  "/Users/Student/CLionProjects/fractol/srcs/fr_menu.c" "/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_menu.c.o"
-  "/Users/Student/CLionProjects/fractol/srcs/fr_mouse.c" "/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_mouse.c.o"
-  "/Users/Student/CLionProjects/fractol/srcs/fr_plot.c" "/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_plot.c.o"
-  "/Users/Student/CLionProjects/fractol/srcs/fr_thread.c" "/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_thread.c.o"
-  "/Users/Student/CLionProjects/fractol/srcs/ft_change_map.c" "/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/ft_change_map.c.o"
-  "/Users/Student/CLionProjects/fractol/srcs/main.c" "/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/main.c.o"
+  "/Users/pmelodi/CLionProjects/fractol/srcs/error.c" "/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/error.c.o"
+  "/Users/pmelodi/CLionProjects/fractol/srcs/fr_change_param.c" "/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_change_param.c.o"
+  "/Users/pmelodi/CLionProjects/fractol/srcs/fr_color.c" "/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_color.c.o"
+  "/Users/pmelodi/CLionProjects/fractol/srcs/fr_init.c" "/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_init.c.o"
+  "/Users/pmelodi/CLionProjects/fractol/srcs/fr_keyboard.c" "/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_keyboard.c.o"
+  "/Users/pmelodi/CLionProjects/fractol/srcs/fr_menu.c" "/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_menu.c.o"
+  "/Users/pmelodi/CLionProjects/fractol/srcs/fr_mouse.c" "/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_mouse.c.o"
+  "/Users/pmelodi/CLionProjects/fractol/srcs/fr_plot.c" "/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_plot.c.o"
+  "/Users/pmelodi/CLionProjects/fractol/srcs/fr_thread.c" "/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_thread.c.o"
+  "/Users/pmelodi/CLionProjects/fractol/srcs/ft_change_map.c" "/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/ft_change_map.c.o"
+  "/Users/pmelodi/CLionProjects/fractol/srcs/main.c" "/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/main.c.o"
   )
 set(CMAKE_C_COMPILER_ID "AppleClang")
 
@@ -25,7 +25,7 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/Users/Student/CLionProjects/fractol/cmake-build-debug/minilibx/CMakeFiles/libft.dir/DependInfo.cmake"
+  "/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/minilibx/CMakeFiles/libft.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

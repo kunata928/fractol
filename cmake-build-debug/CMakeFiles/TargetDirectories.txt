@@ -1,6 +1,6 @@
-/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Users/Student/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir
-/Users/Student/CLionProjects/fractol/cmake-build-debug/minilibx/CMakeFiles/rebuild_cache.dir
-/Users/Student/CLionProjects/fractol/cmake-build-debug/minilibx/CMakeFiles/edit_cache.dir
-/Users/Student/CLionProjects/fractol/cmake-build-debug/minilibx/CMakeFiles/libft.dir
+/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir
+/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/minilibx/CMakeFiles/rebuild_cache.dir
+/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/minilibx/CMakeFiles/edit_cache.dir
+/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/minilibx/CMakeFiles/libft.dir

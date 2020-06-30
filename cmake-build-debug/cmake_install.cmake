@@ -1,4 +1,4 @@
-# Install script for directory: /Users/Student/CLionProjects/fractol
+# Install script for directory: /Users/pmelodi/CLionProjects/fractol
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/Student/CLionProjects/fractol/cmake-build-debug/minilibx/cmake_install.cmake")
+  include("/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/minilibx/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/Student/CLionProjects/fractol/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

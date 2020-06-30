@@ -1,4 +1,4 @@
-# Install script for directory: /Users/Student/CLionProjects/fractol/libft
+# Install script for directory: /Users/pmelodi/CLionProjects/fractol/libft
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
