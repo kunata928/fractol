@@ -12,7 +12,7 @@
 
 #include "../includes/fractol.h"
 
-void	fr_color_mbrot(t_pnt pnt, t_pnt s, t_fr *fr)
+void	fr_color_mbrot(t_pnt pnt, t_pnt s, t_fr *fr, int x, int y)
 {
 	int		i;
 	t_pnt	tmp;
@@ -26,9 +26,15 @@ void	fr_color_mbrot(t_pnt pnt, t_pnt s, t_fr *fr)
 		pnt.i = tmp.i;
 		i++;
 	}
-    *(int*)(fr->image + (int)(i % WINSIZEX) * 4 +
-            (int)(i / WINSIZEX) * fr->s_line) = fr->color[i];
+    int		*t;
+    t = (int*)fr->image;
+    if (x >= 0 && x <= WINSIZEX
+        && y >= 0 && y <= WINSIZEY)
+        t[WINSIZEX * y + x] = fr->color[i];
+    //*(int*)(fr->image + WINSIZEY * y + x) = fr->color[i];
 }
+//(int)(i % WINSIZEX) * 4 +
+//            (int)(i / WINSIZEX) * fr->s_line
 
 void    plot_image(t_fr *fr)
 {
@@ -36,6 +42,12 @@ void    plot_image(t_fr *fr)
     fr->image = mlx_get_data_addr(fr->img_ptr, &fr->bpp,
                                   &fr->s_line, &fr->endian);
     fr_evaluate(fr);
+//    t_datas *data;
+//    data = (t_datas*)malloc(sizeof(t_datas));
+//    data->fr = fr;
+//    data->start_x = 0;
+//    data->end_x = WINSIZEX;
+//    fr_thread_mandelbrot((void *)data);
     mlx_put_image_to_window(fr->mlx, fr->win, fr->img_ptr, 0, 0);
     mlx_destroy_image(fr->mlx, fr->img_ptr);
     fr_info_static0(fr);
@@ -59,7 +71,7 @@ void	*fr_thread_mandelbrot(void *thread_data)
 	    while (y < WINSIZEY)
 	    {
 	        data->fr->pnt.i = (double)(y + data->fr->shift_y) / data->fr->scale;
-            fr_color_mbrot(data->fr->pnt, c, data->fr);
+            fr_color_mbrot(c, data->fr->pnt, data->fr, x, y);
 	        y++;
 	    }
 		x++;
