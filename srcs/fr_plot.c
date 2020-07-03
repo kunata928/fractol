@@ -12,27 +12,7 @@
 
 #include "../includes/fractol.h"
 
-void	fr_color_mbrot(t_pnt pnt, t_pnt s, t_fr *fr, int x, int y)
-{
-	int		i;
-	t_pnt	tmp;
 
-	i = 0;
-	while (i < fr->iter && (pnt.r * pnt.r * 0.95 + pnt.i * pnt.i <= 4))
-	{
-		tmp.r = pnt.r * pnt.r - pnt.i * pnt.i + s.r;
-		tmp.i = 2 * pnt.r * pnt.i + s.i;
-		pnt.r = tmp.r;
-		pnt.i = tmp.i;
-		i++;
-	}
-    int		*t;
-    t = (int*)fr->image;
-    if (x >= 0 && x <= WINSIZEX
-        && y >= 0 && y <= WINSIZEY)
-        t[WINSIZEX * y + x] = fr->color[i];
-    //*(int*)(fr->image + WINSIZEY * y + x) = fr->color[i];
-}
 //(int)(i % WINSIZEX) * 4 +
 //            (int)(i / WINSIZEX) * fr->s_line
 
@@ -58,6 +38,7 @@ void	*fr_thread_mandelbrot(void *thread_data)
 	int		x;
 	int     y;
 	t_pnt   c;
+	t_pnt   n;
 	t_datas *data;
 
 	data = (t_datas *)thread_data;
@@ -67,11 +48,11 @@ void	*fr_thread_mandelbrot(void *thread_data)
 	while (x < data->end_x)
 	{
 	    y = 0;
-	    data->fr->pnt.r = (double)(x + data->fr->shift_x) / data->fr->scale;
+	    n.r = (double)(x + data->fr->shift_x) / data->fr->scale;
 	    while (y < WINSIZEY)
 	    {
-	        data->fr->pnt.i = (double)(y + data->fr->shift_y) / data->fr->scale;
-            fr_color_mbrot(c, data->fr->pnt, data->fr, x, y);
+	        n.i = (double)(y + data->fr->shift_y) / data->fr->scale;
+            fr_color_mbrot(c, n, data->fr, x, y);
 	        y++;
 	    }
 		x++;
@@ -79,7 +60,30 @@ void	*fr_thread_mandelbrot(void *thread_data)
 	return (NULL);
 }
 
-void     fr_thread_julia(void *thread_data);
+void     *fr_thread_julia(void *thread_data)
+{
+    t_datas *data;
+    int		x;
+    int		y;
+    t_pnt	n;
+
+    data = (t_datas *)thread_data;
+    x = data->start_x;
+    while (x < data->end_x)
+    {
+        y = 0;
+        n.r = (x + data->fr->shift_x) / data->fr->scale;
+        while (y < WINSIZEY)
+        {
+            n.i = (y + data->fr->shift_x) / data->fr->scale;
+            fr_color_mbrot(data->fr->pnt, n, data->fr, x, y);
+            y++;
+        }
+        x++;
+    }
+    return (NULL);
+}
+
 
 //int		i;
 //double	k;

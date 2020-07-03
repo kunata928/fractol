@@ -47,6 +47,6 @@ void			fr_thread_selection(int i, t_datas *data, pthread_t *threads)
         data[i].end_x = WINSIZEX / THREADS * (i + 1);
     if (data->fr->name == MANDELBROT)
         pthread_create(&(threads[i]), NULL, fr_thread_mandelbrot, &data[i]);
-//    else if (data->fr->name == JULIA)
-//        pthread_create(&(threads[i]), NULL, fr_thread_julia, &data[i]);
+    else if (data->fr->name == JULIA)
+        pthread_create(&(threads[i]), NULL, fr_thread_julia, &data[i]);
     }

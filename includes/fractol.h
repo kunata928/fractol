@@ -166,9 +166,8 @@ void				fr_scale_image(t_fr *fr, int keycode, int x, int y);
 void            	fr_change_iter(t_fr *fr, int keycode);
 
 void                plot_image(t_fr *fr);
-//void		        fr_color_mbrot(t_pnt pnt, t_pnt s, t_fr *fr);
 void				*fr_thread_mandelbrot(void *thread_data);
-void                fr_thread_julia(void *thread_data);
+void                *fr_thread_julia(void *thread_data);
 
 void				fr_set_color(t_fr *fr);
 
@@ -178,5 +177,5 @@ void				fr_info_static1(t_fr *fr, char *txt);
 void			    fr_evaluate(t_fr *fr);
 void			    fr_thread_selection(int i, t_datas *data, pthread_t *threads);
 
-
+void            	fr_color_mbrot(t_pnt pnt, t_pnt s, t_fr *fr, int x, int y);
 #endif

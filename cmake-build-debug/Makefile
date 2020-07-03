@@ -136,6 +136,33 @@ libft/fast:
 	$(MAKE) -f minilibx/CMakeFiles/libft.dir/build.make minilibx/CMakeFiles/libft.dir/build
 .PHONY : libft/fast
 
+srcs/color_fractol.o: srcs/color_fractol.c.o
+
+.PHONY : srcs/color_fractol.o
+
+# target to build an object file
+srcs/color_fractol.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/color_fractol.c.o
+.PHONY : srcs/color_fractol.c.o
+
+srcs/color_fractol.i: srcs/color_fractol.c.i
+
+.PHONY : srcs/color_fractol.i
+
+# target to preprocess a source file
+srcs/color_fractol.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/color_fractol.c.i
+.PHONY : srcs/color_fractol.c.i
+
+srcs/color_fractol.s: srcs/color_fractol.c.s
+
+.PHONY : srcs/color_fractol.s
+
+# target to generate assembly for a file
+srcs/color_fractol.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/color_fractol.c.s
+.PHONY : srcs/color_fractol.c.s
+
 srcs/error.o: srcs/error.c.o
 
 .PHONY : srcs/error.o
@@ -443,6 +470,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... fractol"
 	@echo "... libft"
+	@echo "... srcs/color_fractol.o"
+	@echo "... srcs/color_fractol.i"
+	@echo "... srcs/color_fractol.s"
 	@echo "... srcs/error.o"
 	@echo "... srcs/error.i"
 	@echo "... srcs/error.s"

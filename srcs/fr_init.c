@@ -21,7 +21,7 @@ void		fr_init(t_fr *fr)
 	fr->scale = 200;
 	fr->scale_shift_x = 0;
 	fr->scale_shift_y = 0;
-	fr->shift_x = -WINSIZEX / 2;
+	fr->shift_x = -WINSIZEX / 2 - 100;
 	fr->shift_y = -WINSIZEY / 2;
 	fr->contr.prev_x = 0;
 	fr->contr.prev_y = 0;
@@ -33,6 +33,10 @@ void		fr_init(t_fr *fr)
 	fr_set_color(fr);
 	fr->win = mlx_new_window(fr->mlx, WINSIZEX, WINSIZEY, "fractol");
 	fr->name = MANDELBROT;
+	fr->pnt.i = 0;
+	fr->pnt.r = 0;
+    fr->pnt.r = ( fr->shift_x) / fr->scale;
+    fr->pnt.i = ( fr->shift_x) / fr->scale;
 	//fr->name = fr_name_map(fr);
 }
 

@@ -33,10 +33,10 @@ int		fr_mouse_move(int x, int y, t_fr *fr)
 		fr->shift_y += fr->contr.prev_y - y;
 		fr->contr.prev_x = x;
 		fr->contr.prev_y = y;
+        plot_image(fr);
 	}
 	fr->current.i = y;
 	fr->current.r = x;
-	plot_image(fr);
 	return (0);
 }
 
