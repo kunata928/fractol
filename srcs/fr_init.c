@@ -32,11 +32,8 @@ void		fr_init(t_fr *fr)
 	fr->color = (int *)ft_memalloc(sizeof(int) * (fr->iter + 1));
 	fr_set_color(fr);
 	fr->win = mlx_new_window(fr->mlx, WINSIZEX, WINSIZEY, "fractol");
-	fr->name = MANDELBROT;
-	fr->pnt.i = 0;
-	fr->pnt.r = 0;
-    fr->pnt.r = ( fr->shift_x) / fr->scale;
-    fr->pnt.i = ( fr->shift_x) / fr->scale;
+    fr->pnt.r = (-1 +  fr->shift_x) / fr->scale;
+    fr->pnt.i = 0;//( fr->shift_x) / fr->scale;
 	//fr->name = fr_name_map(fr);
 }
 

@@ -15,7 +15,7 @@
 int		fr_mouse_press(int button, int x, int y, t_fr *fr)
 {
 	if (button == MOUSE_SCROLL_UP || button == MOUSE_SCROLL_DOWN)
-		fr_scale_image(fr, button, x, y);
+		fr_scale_image_cursor(fr, button, x, y);
 	else if (button == MOUSE_LEFT_BUTTON)
 		fr->contr.left_button = TRUE;
 	return (0);
@@ -35,8 +35,8 @@ int		fr_mouse_move(int x, int y, t_fr *fr)
 		fr->contr.prev_y = y;
         plot_image(fr);
 	}
-	fr->current.i = y;
-	fr->current.r = x;
+	//fr->current.i = y;
+	//fr->current.r = x;
 	return (0);
 }
 

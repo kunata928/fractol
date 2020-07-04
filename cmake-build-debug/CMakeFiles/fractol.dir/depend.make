@@ -11,6 +11,11 @@ CMakeFiles/fractol.dir/srcs/error.c.o: ../includes/mlx.h
 CMakeFiles/fractol.dir/srcs/error.c.o: ../libft/includes/libft.h
 CMakeFiles/fractol.dir/srcs/error.c.o: ../srcs/error.c
 
+CMakeFiles/fractol.dir/srcs/extra_functions.c.o: ../includes/fractol.h
+CMakeFiles/fractol.dir/srcs/extra_functions.c.o: ../includes/mlx.h
+CMakeFiles/fractol.dir/srcs/extra_functions.c.o: ../libft/includes/libft.h
+CMakeFiles/fractol.dir/srcs/extra_functions.c.o: ../srcs/extra_functions.c
+
 CMakeFiles/fractol.dir/srcs/fr_change_param.c.o: ../includes/fractol.h
 CMakeFiles/fractol.dir/srcs/fr_change_param.c.o: ../includes/mlx.h
 CMakeFiles/fractol.dir/srcs/fr_change_param.c.o: ../libft/includes/libft.h

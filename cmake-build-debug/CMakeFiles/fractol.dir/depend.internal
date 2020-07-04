@@ -11,6 +11,11 @@ CMakeFiles/fractol.dir/srcs/error.c.o
  /Users/pmelodi/CLionProjects/fractol/includes/mlx.h
  /Users/pmelodi/CLionProjects/fractol/libft/includes/libft.h
  /Users/pmelodi/CLionProjects/fractol/srcs/error.c
+CMakeFiles/fractol.dir/srcs/extra_functions.c.o
+ /Users/pmelodi/CLionProjects/fractol/includes/fractol.h
+ /Users/pmelodi/CLionProjects/fractol/includes/mlx.h
+ /Users/pmelodi/CLionProjects/fractol/libft/includes/libft.h
+ /Users/pmelodi/CLionProjects/fractol/srcs/extra_functions.c
 CMakeFiles/fractol.dir/srcs/fr_change_param.c.o
  /Users/pmelodi/CLionProjects/fractol/includes/fractol.h
  /Users/pmelodi/CLionProjects/fractol/includes/mlx.h

@@ -163,6 +163,7 @@ int					fr_mouse_press(int button, int x, int y, t_fr *fr);
 int					fr_mouse_move(int x, int y, t_fr *fr);
 
 void				fr_scale_image(t_fr *fr, int keycode, int x, int y);
+void		        fr_scale_image_cursor(t_fr *fr, int keycode, int x, int y);
 void            	fr_change_iter(t_fr *fr, int keycode);
 
 void                plot_image(t_fr *fr);
@@ -178,4 +179,7 @@ void			    fr_evaluate(t_fr *fr);
 void			    fr_thread_selection(int i, t_datas *data, pthread_t *threads);
 
 void            	fr_color_mbrot(t_pnt pnt, t_pnt s, t_fr *fr, int x, int y);
+
+void                move_to_center(t_fr *fr);
+
 #endif

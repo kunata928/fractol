@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/pmelodi/CLionProjects/fractol/srcs/color_fractol.c" "/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/color_fractol.c.o"
   "/Users/pmelodi/CLionProjects/fractol/srcs/error.c" "/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/error.c.o"
+  "/Users/pmelodi/CLionProjects/fractol/srcs/extra_functions.c" "/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/extra_functions.c.o"
   "/Users/pmelodi/CLionProjects/fractol/srcs/fr_change_param.c" "/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_change_param.c.o"
   "/Users/pmelodi/CLionProjects/fractol/srcs/fr_color.c" "/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_color.c.o"
   "/Users/pmelodi/CLionProjects/fractol/srcs/fr_init.c" "/Users/pmelodi/CLionProjects/fractol/cmake-build-debug/CMakeFiles/fractol.dir/srcs/fr_init.c.o"

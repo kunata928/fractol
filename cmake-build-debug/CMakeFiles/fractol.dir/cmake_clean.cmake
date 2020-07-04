@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/fractol.dir/srcs/color_fractol.c.o"
   "CMakeFiles/fractol.dir/srcs/error.c.o"
+  "CMakeFiles/fractol.dir/srcs/extra_functions.c.o"
   "CMakeFiles/fractol.dir/srcs/fr_change_param.c.o"
   "CMakeFiles/fractol.dir/srcs/fr_color.c.o"
   "CMakeFiles/fractol.dir/srcs/fr_init.c.o"

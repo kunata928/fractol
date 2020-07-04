@@ -190,6 +190,33 @@ srcs/error.c.s:
 	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/error.c.s
 .PHONY : srcs/error.c.s
 
+srcs/extra_functions.o: srcs/extra_functions.c.o
+
+.PHONY : srcs/extra_functions.o
+
+# target to build an object file
+srcs/extra_functions.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/extra_functions.c.o
+.PHONY : srcs/extra_functions.c.o
+
+srcs/extra_functions.i: srcs/extra_functions.c.i
+
+.PHONY : srcs/extra_functions.i
+
+# target to preprocess a source file
+srcs/extra_functions.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/extra_functions.c.i
+.PHONY : srcs/extra_functions.c.i
+
+srcs/extra_functions.s: srcs/extra_functions.c.s
+
+.PHONY : srcs/extra_functions.s
+
+# target to generate assembly for a file
+srcs/extra_functions.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/extra_functions.c.s
+.PHONY : srcs/extra_functions.c.s
+
 srcs/fr_change_param.o: srcs/fr_change_param.c.o
 
 .PHONY : srcs/fr_change_param.o
@@ -476,6 +503,9 @@ help:
 	@echo "... srcs/error.o"
 	@echo "... srcs/error.i"
 	@echo "... srcs/error.s"
+	@echo "... srcs/extra_functions.o"
+	@echo "... srcs/extra_functions.i"
+	@echo "... srcs/extra_functions.s"
 	@echo "... srcs/fr_change_param.o"
 	@echo "... srcs/fr_change_param.i"
 	@echo "... srcs/fr_change_param.s"

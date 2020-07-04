@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   fr_keyboard.c                                      :+:      :+:    :+:   */
+/*   extra_functions.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pmelodi <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,37 +12,11 @@
 
 #include "../includes/fractol.h"
 
-int			fdf_check_key(int keycode)
+void    move_to_center(t_fr *fr)
 {
-	if (keycode == KEY_ESC || keycode == KEY_M ||
-			keycode == KEY_J || keycode == KEY_PLUS
-			|| keycode == KEY_MINUS || keycode == KEY_SPACE)
-		return (1);
-	return (0);
+    fr->shift_x = -WINSIZEX / 2 - 100;
+    fr->shift_y = -WINSIZEY / 2;
+    fr->scale = 200;
+    plot_image(fr);
 }
 
-void		fdf_turn_in_help(t_fr *fr)
-{
-//	fdf->condition.help = !(fdf->condition.help);
-//	fdf_copy_in_cur(fdf);
-//	fdf_eval_cur(fdf);
-//	fdf_center(fdf);
-//	fdf_plot(fdf);
-}
-
-int			fr_key_press(int keycode, t_fr *fr)
-{
-	if (fdf_check_key(keycode))
-	{
-		if (keycode == KEY_ESC)
-			exit(1);
-		if (keycode == KEY_M || keycode == KEY_J)
-			fr_change_map(fr, keycode);
-		if (keycode == KEY_PLUS || keycode == KEY_MINUS)
-			fr_change_iter(fr, keycode);
-		if (keycode == KEY_SPACE)
-		    move_to_center(fr);
-
-	}
-	return (0);
-}

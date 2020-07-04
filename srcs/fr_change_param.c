@@ -12,26 +12,31 @@
 
 #include "../includes/fractol.h"
 
-void			fr_scale_image(t_fr *fr, int keycode, int x, int y)
+void		fr_scale_image(t_fr *fr, int keycode, int x, int y)
 {
-	double prev;
-
 	if (keycode == MOUSE_SCROLL_UP)
-	{
 		fr->scale *= D_SCALE;
-		//fr->k =
-		prev = (double)(4 * fr->scale) / WINSIZEX;;
-		fr->scale_shift_x = ((double)WINSIZEX / 2 - x) * prev;
-		fr->scale_shift_y = ((double)WINSIZEY / 2 - y) * prev;
-	}
 	if (keycode == MOUSE_SCROLL_DOWN)
-	{
 		fr->scale /= D_SCALE;
-		prev = (double)(4 * fr->scale) / WINSIZEX;
-		fr->scale_shift_x = ((double)WINSIZEX / 2 - x) * prev;
-		fr->scale_shift_y = ((double)WINSIZEY / 2 - y) * prev;
-	}
 	plot_image(fr);
+}
+
+void		fr_scale_image_cursor(t_fr *fr, int keycode, int x, int y)
+{
+    if ((keycode == MOUSE_SCROLL_UP)
+        && fr->scale < 0x4FFFFFFF)
+    {
+        fr->scale *= 1.2;
+        fr->shift_x = (int)(fr->shift_x * 1.2 + x * 0.2);
+        fr->shift_y = (int)(fr->shift_y * 1.2 + y * 0.2);
+    }
+    else if (keycode == MOUSE_SCROLL_DOWN)
+    {
+        fr->scale /= 1.2;
+        fr->shift_x = (int)(fr->shift_x / 1.2 - x * 0.1709);
+        fr->shift_y = (int)(fr->shift_y / 1.2 - y * 0.1709);
+    }
+    plot_image(fr);
 }
 
 void		fr_change_iter(t_fr *fr, int keycode)

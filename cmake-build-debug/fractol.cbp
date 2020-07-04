@@ -338,6 +338,9 @@
 		<Unit filename="/Users/pmelodi/CLionProjects/fractol/srcs/error.c">
 			<Option target="fractol"/>
 		</Unit>
+		<Unit filename="/Users/pmelodi/CLionProjects/fractol/srcs/extra_functions.c">
+			<Option target="fractol"/>
+		</Unit>
 		<Unit filename="/Users/pmelodi/CLionProjects/fractol/srcs/fr_change_param.c">
 			<Option target="fractol"/>
 		</Unit>
