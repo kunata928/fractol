@@ -15,13 +15,13 @@
 void		fr_init(t_fr *fr)
 {
 	fr->mlx = mlx_init();
-	fr->iter = MAX_ITERATION;
+	fr->iter = 113;
 	fr->current.i = 0;
 	fr->current.r = 0;
 	fr->scale = 200;
 	fr->scale_shift_x = 0;
 	fr->scale_shift_y = 0;
-	fr->shift_x = -WINSIZEX / 2 - 100;
+	fr->shift_x = -WINSIZEX / 2;
 	fr->shift_y = -WINSIZEY / 2;
 	fr->contr.prev_x = 0;
 	fr->contr.prev_y = 0;
@@ -34,7 +34,7 @@ void		fr_init(t_fr *fr)
 	fr->win = mlx_new_window(fr->mlx, WINSIZEX, WINSIZEY, "fractol");
     fr->pnt.r = (-1 +  fr->shift_x) / fr->scale;
     fr->pnt.i = 0;//( fr->shift_x) / fr->scale;
-	//fr->name = fr_name_map(fr);
+	fr->contr.map = fr_name_map(fr);
 }
 
 int			fr_init_map(char *map, t_fr *fr)
@@ -73,11 +73,11 @@ int			fr_read_consol(int ac, char **av, t_fr *fr)
 
 char		*fr_name_map(t_fr *fr)
 {
-	char	*txt;
+//	char	*txt;
 
-	if (fr->contr.map == 1)
-		return (ft_strcpy(txt, "Mandelbrot"));
-	if (fr->contr.map == 2)
-		return (ft_strcpy(txt,"Julia"));
+	if (fr->name == MANDELBROT)
+		return ("Mandelbrot");
+	if (fr->name == JULIA)
+		return ("Julia");
 	return ("");
 }

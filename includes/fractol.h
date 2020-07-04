@@ -94,7 +94,7 @@ typedef struct		s_contr
 	int				shift;
 	int				cntrl;
 	int				help;
-	int				map;
+	char			*map;
 	int				prev_x;
 	int				prev_y;
 }					t_contr;

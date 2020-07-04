@@ -23,7 +23,7 @@ int		fr_mouse_press(int button, int x, int y, t_fr *fr)
 
 int		fr_mouse_move(int x, int y, t_fr *fr)
 {
-	if (fr->contr.left_button)
+    if (fr->contr.left_button && fr->name == MANDELBROT)
 	{
 		if (fr->contr.prev_x == 0)
 			fr->contr.prev_x = x;
@@ -31,12 +31,18 @@ int		fr_mouse_move(int x, int y, t_fr *fr)
 			fr->contr.prev_y = y;
 		fr->shift_x += fr->contr.prev_x - x;
 		fr->shift_y += fr->contr.prev_y - y;
-		fr->contr.prev_x = x;
-		fr->contr.prev_y = y;
+        fr->contr.prev_x = x;
+        fr->contr.prev_y = y;
         plot_image(fr);
 	}
-	//fr->current.i = y;
-	//fr->current.r = x;
+    else if (fr->name == JULIA)
+    {
+        fr->pnt.r = (x * 0.4 + fr->shift_x) / fr->scale;
+        fr->pnt.i = (y * 0.4 + fr->shift_y) / fr->scale;
+        plot_image(fr);
+    }
+	fr->current.i = y;
+	fr->current.r = x;
 	return (0);
 }
 

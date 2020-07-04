@@ -12,19 +12,19 @@
 
 #include "../includes/fractol.h"
 
-void 	    fr_color_mbrot(t_pnt pnt, t_pnt s, t_fr *fr, int x, int y)
+void 	    fr_color_mbrot(t_pnt n, t_pnt s, t_fr *fr, int x, int y)
 {
     int		i;
     t_pnt	tmp;
     int		*t;
 
     i = 0;
-    while (i < fr->iter && (pnt.r * pnt.r * 0.95 + pnt.i * pnt.i <= 4))
+    while (i < fr->iter && ((n.r * n.r * 0.95 + n.i * n.i) <= 4))
     {
-        tmp.r = pnt.r * pnt.r - pnt.i * pnt.i + s.r;
-        tmp.i = 2 * pnt.r * pnt.i + s.i;
-        pnt.r = tmp.r;
-        pnt.i = tmp.i;
+        tmp.r = n.r * n.r - n.i * n.i + s.r;
+        tmp.i = 2 * n.r * n.i + s.i;
+        n.r = tmp.r;
+        n.i = tmp.i;
         i++;
     }
     t = (int*)fr->image;

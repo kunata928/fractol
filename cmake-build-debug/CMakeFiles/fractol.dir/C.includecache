@@ -34,11 +34,7 @@ unistd.h
 stdlib.h
 -
 
-/Users/pmelodi/CLionProjects/fractol/srcs/fr_change_param.c
-../includes/fractol.h
-/Users/pmelodi/CLionProjects/fractol/includes/fractol.h
-
-/Users/pmelodi/CLionProjects/fractol/srcs/fr_mouse.c
+/Users/pmelodi/CLionProjects/fractol/srcs/fr_menu.c
 ../includes/fractol.h
 /Users/pmelodi/CLionProjects/fractol/includes/fractol.h
 

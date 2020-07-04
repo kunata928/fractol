@@ -76,7 +76,7 @@ void     *fr_thread_julia(void *thread_data)
         while (y < WINSIZEY)
         {
             n.i = (double)(y + data->fr->shift_x) / data->fr->scale;
-            fr_color_mbrot(data->fr->pnt, n, data->fr, x, y);
+            fr_color_mbrot(n, data->fr->pnt, data->fr, x, y);
             y++;
         }
         x++;

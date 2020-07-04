@@ -14,7 +14,7 @@
 
 void    move_to_center(t_fr *fr)
 {
-    fr->shift_x = -WINSIZEX / 2 - 100;
+    fr->shift_x = -WINSIZEX / 2;
     fr->shift_y = -WINSIZEY / 2;
     fr->scale = 200;
     plot_image(fr);
