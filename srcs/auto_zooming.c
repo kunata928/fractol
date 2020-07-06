@@ -12,40 +12,29 @@
 
 #include "../includes/fractol.h"
 
-int			fdf_check_key(int keycode)
+void    zoom(t_fr *fr)
 {
-	if (keycode == KEY_ESC || keycode == KEY_M ||
-			keycode == KEY_J || keycode == KEY_PLUS
-			|| keycode == KEY_MINUS || keycode == KEY_SPACE
-			|| keycode == KEY_N || keycode == KEY_Z)
-		return (1);
-	return (0);
-}
+    int     i;
+    int     x;
+    int     y;
 
-void		fdf_turn_in_help(t_fr *fr)
-{
-//	fdf->condition.help = !(fdf->condition.help);
-//	fdf_copy_in_cur(fdf);
-//	fdf_eval_cur(fdf);
-//	fdf_center(fdf);
-//	fdf_plot(fdf);
-}
-
-int			fr_key_press(int keycode, t_fr *fr)
-{
-	if (fdf_check_key(keycode))
-	{
-		if (keycode == KEY_ESC)
-			exit(1);
-		if (keycode == KEY_M || keycode == KEY_J || keycode == KEY_N)
-			fr_change_map(fr, keycode);
-		if (keycode == KEY_PLUS || keycode == KEY_MINUS)
-			fr_change_iter(fr, keycode);
-		if (keycode == KEY_SPACE)
-		    move_to_center(fr);
-		if (keycode == KEY_Z)
-		    zoom(fr);
-
-	}
-	return (0);
+    i = 0;
+    x = 150;
+    y = 300;
+    while (i < 50)
+    {
+        fr->scale *= 1.2;
+        fr->shift_x = (int)(fr->shift_x * 1.2 + x * 0.2);
+        fr->shift_y = (int)(fr->shift_y * 1.2 + y * 0.2);
+        plot_image(fr);
+        i++;
+    }
+    while (i < -1)
+    {
+        fr->scale /= 1.2;
+        fr->shift_x = (int)(fr->shift_x / 1.2 - x * 0.1709);
+        fr->shift_y = (int)(fr->shift_y / 1.2 - y * 0.1709);
+        plot_image(fr);
+        i--;
+    }
 }

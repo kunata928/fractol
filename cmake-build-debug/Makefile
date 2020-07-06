@@ -136,6 +136,33 @@ libft/fast:
 	$(MAKE) -f minilibx/CMakeFiles/libft.dir/build.make minilibx/CMakeFiles/libft.dir/build
 .PHONY : libft/fast
 
+srcs/auto_zooming.o: srcs/auto_zooming.c.o
+
+.PHONY : srcs/auto_zooming.o
+
+# target to build an object file
+srcs/auto_zooming.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/auto_zooming.c.o
+.PHONY : srcs/auto_zooming.c.o
+
+srcs/auto_zooming.i: srcs/auto_zooming.c.i
+
+.PHONY : srcs/auto_zooming.i
+
+# target to preprocess a source file
+srcs/auto_zooming.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/auto_zooming.c.i
+.PHONY : srcs/auto_zooming.c.i
+
+srcs/auto_zooming.s: srcs/auto_zooming.c.s
+
+.PHONY : srcs/auto_zooming.s
+
+# target to generate assembly for a file
+srcs/auto_zooming.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/auto_zooming.c.s
+.PHONY : srcs/auto_zooming.c.s
+
 srcs/color_fractol.o: srcs/color_fractol.c.o
 
 .PHONY : srcs/color_fractol.o
@@ -497,6 +524,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... fractol"
 	@echo "... libft"
+	@echo "... srcs/auto_zooming.o"
+	@echo "... srcs/auto_zooming.i"
+	@echo "... srcs/auto_zooming.s"
 	@echo "... srcs/color_fractol.o"
 	@echo "... srcs/color_fractol.i"
 	@echo "... srcs/color_fractol.s"

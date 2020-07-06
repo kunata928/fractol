@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/fractol.dir/srcs/auto_zooming.c.o"
   "CMakeFiles/fractol.dir/srcs/color_fractol.c.o"
   "CMakeFiles/fractol.dir/srcs/error.c.o"
   "CMakeFiles/fractol.dir/srcs/extra_functions.c.o"

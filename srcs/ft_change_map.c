@@ -15,7 +15,20 @@
 void		fr_change_map(t_fr *fr, int key)
 {
 	if (key == KEY_M)
-		fr->contr.map = 1;
+    {
+        fr->name = MANDELBROT;
+        fr->contr.map = "Mandelbrot";
+    }
 	else if (key == KEY_J)
-		fr->contr.map = 2;
+    {
+        fr->name = JULIA;
+        fr->contr.map = "Julia";
+    }
+	else if (key == KEY_N)
+    {
+        fr->name = NEUTON;
+        fr->contr.map = "Neuton";
+    }
+	move_to_center(fr);
+	plot_image(fr);
 }

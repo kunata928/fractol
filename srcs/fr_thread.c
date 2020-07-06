@@ -49,4 +49,6 @@ void			fr_thread_selection(int i, t_datas *data, pthread_t *threads)
         pthread_create(&(threads[i]), NULL, fr_thread_mandelbrot, &data[i]);
     else if (data->fr->name == JULIA)
         pthread_create(&(threads[i]), NULL, fr_thread_julia, &data[i]);
+    else if (data->fr->name == NEUTON)
+        pthread_create(&(threads[i]), NULL, fr_thread_neuton, &data[i]);
     }

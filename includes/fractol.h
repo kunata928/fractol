@@ -35,7 +35,8 @@
 
 # define JULIA              0
 # define MANDELBROT         1
-# define RANDOM             2
+# define NEUTON             2
+# define RANDOM             3
 
 # define GELB				0xF3D476
 # define ROT				0x622C40
@@ -71,6 +72,7 @@
 # define KEY_Q				12
 # define KEY_W				13
 # define KEY_J				38
+# define KEY_N              45
 # define KEY_M				46
 # define KEY_SPACE			49
 # define KEY_PLUS			24
@@ -169,6 +171,7 @@ void            	fr_change_iter(t_fr *fr, int keycode);
 void                plot_image(t_fr *fr);
 void				*fr_thread_mandelbrot(void *thread_data);
 void                *fr_thread_julia(void *thread_data);
+void                *fr_thread_neuton(void *thread_data);
 
 void				fr_set_color(t_fr *fr);
 
@@ -179,7 +182,10 @@ void			    fr_evaluate(t_fr *fr);
 void			    fr_thread_selection(int i, t_datas *data, pthread_t *threads);
 
 void            	fr_color_mbrot(t_pnt pnt, t_pnt s, t_fr *fr, int x, int y);
+void                fr_color_neuton(t_pnt n, t_pnt s, t_fr *fr, int x, int y);
 
 void                move_to_center(t_fr *fr);
+
+void                zoom(t_fr *fr);
 
 #endif
