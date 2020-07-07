@@ -163,6 +163,33 @@ srcs/auto_zooming.c.s:
 	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/auto_zooming.c.s
 .PHONY : srcs/auto_zooming.c.s
 
+srcs/color1.o: srcs/color1.c.o
+
+.PHONY : srcs/color1.o
+
+# target to build an object file
+srcs/color1.c.o:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/color1.c.o
+.PHONY : srcs/color1.c.o
+
+srcs/color1.i: srcs/color1.c.i
+
+.PHONY : srcs/color1.i
+
+# target to preprocess a source file
+srcs/color1.c.i:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/color1.c.i
+.PHONY : srcs/color1.c.i
+
+srcs/color1.s: srcs/color1.c.s
+
+.PHONY : srcs/color1.s
+
+# target to generate assembly for a file
+srcs/color1.c.s:
+	$(MAKE) -f CMakeFiles/fractol.dir/build.make CMakeFiles/fractol.dir/srcs/color1.c.s
+.PHONY : srcs/color1.c.s
+
 srcs/color_fractol.o: srcs/color_fractol.c.o
 
 .PHONY : srcs/color_fractol.o
@@ -527,6 +554,9 @@ help:
 	@echo "... srcs/auto_zooming.o"
 	@echo "... srcs/auto_zooming.i"
 	@echo "... srcs/auto_zooming.s"
+	@echo "... srcs/color1.o"
+	@echo "... srcs/color1.i"
+	@echo "... srcs/color1.s"
 	@echo "... srcs/color_fractol.o"
 	@echo "... srcs/color_fractol.i"
 	@echo "... srcs/color_fractol.s"

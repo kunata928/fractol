@@ -6,6 +6,11 @@ CMakeFiles/fractol.dir/srcs/auto_zooming.c.o
  /Users/pmelodi/CLionProjects/fractol/includes/mlx.h
  /Users/pmelodi/CLionProjects/fractol/libft/includes/libft.h
  /Users/pmelodi/CLionProjects/fractol/srcs/auto_zooming.c
+CMakeFiles/fractol.dir/srcs/color1.c.o
+ /Users/pmelodi/CLionProjects/fractol/includes/fractol.h
+ /Users/pmelodi/CLionProjects/fractol/includes/mlx.h
+ /Users/pmelodi/CLionProjects/fractol/libft/includes/libft.h
+ /Users/pmelodi/CLionProjects/fractol/srcs/color1.c
 CMakeFiles/fractol.dir/srcs/color_fractol.c.o
  /Users/pmelodi/CLionProjects/fractol/includes/fractol.h
  /Users/pmelodi/CLionProjects/fractol/includes/mlx.h

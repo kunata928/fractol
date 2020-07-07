@@ -20,3 +20,17 @@ void    move_to_center(t_fr *fr)
     plot_image(fr);
 }
 
+void    moving_image(t_fr *fr)
+{
+    if (fr->contr.start_move == 0)
+        fr->contr.start_move = 1;
+    else
+        fr->contr.start_move = 0;
+    plot_image(fr);
+}
+
+void    change_color(t_fr *fr)
+{
+    fr->contr.bg = !(fr->contr.bg);
+    plot_image(fr);
+}

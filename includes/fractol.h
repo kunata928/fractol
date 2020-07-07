@@ -41,6 +41,14 @@
 # define GELB				0xF3D476
 # define ROT				0x622C40
 # define BLAU				0x06062C
+# define BG7                0x1D0468
+# define BG6                0xF6F6BA
+# define BG5                0x917BCC
+# define BG4                0xB99FDB
+# define BG3                0xF1A9D6
+# define BG2                0xA4DBE8
+# define BG1                0x8CB7D7
+# define BG0                0x513679
 
 # define WINSIZEX			700
 # define WINSIZEY			700
@@ -99,6 +107,8 @@ typedef struct		s_contr
 	char			*map;
 	int				prev_x;
 	int				prev_y;
+	int             start_move;
+    int             bg;
 }					t_contr;
 
 typedef struct		s_pnt
@@ -132,6 +142,7 @@ typedef struct		s_fr
 	int				endian;
 	int 			name;
 	int				*color;
+	int             *col_bgum;
 
 	int				iter;
 	double			scale;
@@ -174,6 +185,13 @@ void                *fr_thread_julia(void *thread_data);
 void                *fr_thread_neuton(void *thread_data);
 
 void				fr_set_color(t_fr *fr);
+double              fdf_doublebltoint(double nbr);
+int                 fr_color_pnt(t_col *col, int cur);
+int                 get_light(double start, double end, double percent);
+double              percent(int start, int end, double curr);
+
+void                set_color_bubble_gum(t_fr *fr);
+void                set_color_bubble_gum1(t_fr *fr, t_col *col, int cols, int cole);
 
 void				fr_info_static0(t_fr *fr);
 void				fr_info_static1(t_fr *fr, char *txt);
@@ -185,7 +203,9 @@ void            	fr_color_mbrot(t_pnt pnt, t_pnt s, t_fr *fr, int x, int y);
 void                fr_color_neuton(t_pnt n, t_pnt s, t_fr *fr, int x, int y);
 
 void                move_to_center(t_fr *fr);
+void                moving_image(t_fr *fr);
+void                change_color(t_fr *fr);
 
-void                zoom(t_fr *fr);
+//void                zoom(t_fr *fr);
 
 #endif

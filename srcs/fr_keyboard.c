@@ -17,7 +17,8 @@ int			fdf_check_key(int keycode)
 	if (keycode == KEY_ESC || keycode == KEY_M ||
 			keycode == KEY_J || keycode == KEY_PLUS
 			|| keycode == KEY_MINUS || keycode == KEY_SPACE
-			|| keycode == KEY_N || keycode == KEY_Z)
+			|| keycode == KEY_N
+			|| keycode == KEY_S || keycode == KEY_B) //|| keycode == KEY_Z
 		return (1);
 	return (0);
 }
@@ -43,8 +44,12 @@ int			fr_key_press(int keycode, t_fr *fr)
 			fr_change_iter(fr, keycode);
 		if (keycode == KEY_SPACE)
 		    move_to_center(fr);
-		if (keycode == KEY_Z)
-		    zoom(fr);
+		if (keycode == KEY_S)
+		    moving_image(fr);
+		if (keycode == KEY_B)
+		    change_color(fr);
+//		if (keycode == KEY_Z)
+//		    zoom(fr);
 
 	}
 	return (0);

@@ -85,7 +85,7 @@ void		fr_set_color(t_fr *fr)
 		i++;
 	}
 	col.start = i;
-	col.end = fr->iter;
+	col.end = fr->iter + 1;
 	col.scol = ROT;
 	col.ecol = BLAU;
 	while (i < fr->iter + 1)

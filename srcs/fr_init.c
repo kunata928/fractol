@@ -15,7 +15,7 @@
 void		fr_init(t_fr *fr)
 {
 	fr->mlx = mlx_init();
-	fr->iter = 113;
+	fr->iter = 255;
 	fr->current.i = 0;
 	fr->current.r = 0;
 	fr->scale = 200;
@@ -30,11 +30,15 @@ void		fr_init(t_fr *fr)
 	fr->k = 200;
 	fr->contr.left_button = FALSE;
 	fr->color = (int *)ft_memalloc(sizeof(int) * (fr->iter + 1));
+    fr->col_bgum = (int *)ft_memalloc(sizeof(int) * (fr->iter + 1));
 	fr_set_color(fr);
+    set_color_bubble_gum(fr);
 	fr->win = mlx_new_window(fr->mlx, WINSIZEX, WINSIZEY, "fractol");
     fr->pnt.r = (-1 +  fr->shift_x) / fr->scale;
     fr->pnt.i = 0;//( fr->shift_x) / fr->scale;
 	fr->contr.map = fr_name_map(fr);
+    fr->contr.start_move = 0;
+    fr->contr.bg = 0;
 }
 
 int			fr_init_map(char *map, t_fr *fr)
@@ -63,7 +67,7 @@ int			fr_init_map(char *map, t_fr *fr)
 int			fr_read_consol(int ac, char **av, t_fr *fr)
 {
 	if (ac == 1)
-		fr->contr.map = 2;
+		fr->name = MANDELBROT;
 	else if (ac == 2)
 		return (fr_init_map(av[1], fr));
 	else

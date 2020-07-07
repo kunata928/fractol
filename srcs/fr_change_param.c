@@ -59,6 +59,9 @@ void		fr_change_iter(t_fr *fr, int keycode)
 		fr->iter = 1;
 	if (fr->iter > MAX_ITERATION)
 		fr->iter = MAX_ITERATION - 1;
-	fr_set_color(fr);
+	if (fr->contr.bg)
+        set_color_bubble_gum(fr);
+    else
+        fr_set_color(fr);
 	plot_image(fr);
 }

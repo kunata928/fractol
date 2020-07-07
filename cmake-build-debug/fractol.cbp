@@ -335,6 +335,9 @@
 		<Unit filename="/Users/pmelodi/CLionProjects/fractol/srcs/auto_zooming.c">
 			<Option target="fractol"/>
 		</Unit>
+		<Unit filename="/Users/pmelodi/CLionProjects/fractol/srcs/color1.c">
+			<Option target="fractol"/>
+		</Unit>
 		<Unit filename="/Users/pmelodi/CLionProjects/fractol/srcs/color_fractol.c">
 			<Option target="fractol"/>
 		</Unit>
