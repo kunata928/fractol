@@ -22,22 +22,43 @@ void		fr_info_static0(t_fr *fr)
 	mlx_string_put(fr->mlx, fr->win,
 			WINSIZEX - 40, 5, TEXT_COL2, txt);
 	free(txt);
-	fr_info_static1(fr, txt);
-//	fdf_info_help(fdf);
+	fr_info_static1(fr);
+	fr_info_help(fr);
 }
 
-void		fr_info_static1(t_fr *fr, char *txt)
+void		fr_info_static1(t_fr *fr)
 {
-	//	mlx_string_put(fr->mlx, fr->win, 0, 0,
-	//			TEXT_COL0, fr->map_name);
 	mlx_string_put(fr->mlx, fr->win, 3, 18,
-			TEXT_COL0, "Press <Esc> to exit");
-    mlx_string_put(fr->mlx, fr->win, 3, 1,
-                   TEXT_COL0, fr->contr.map);
-	mlx_string_put(fr->mlx, fr->win,
-				   WINSIZEX - 153, 23, TEXT_COL1, "Scale:");
-	txt = ft_itoa(fr->scale);
-	mlx_string_put(fr->mlx, fr->win,
-				   WINSIZEX - 40, 23, TEXT_COL2, txt);
-	free(txt);
+			T0, "Press <Esc> to exit");
+	if (fr->name == MANDELBROT)
+        mlx_string_put(fr->mlx, fr->win, 3, 1, T0, "Mandelbrot");
+	else if (fr->name == JULIA)
+        mlx_string_put(fr->mlx, fr->win, 3, 1, T0, "Julia");
+    else
+        mlx_string_put(fr->mlx, fr->win, 3, 1, T0, "Natali");
+}
+
+void        fr_info_help(t_fr *fr)
+{
+    mlx_string_put(fr->mlx, fr->win,
+                   5, WINSIZEY - 23, T0, "Press     <h>     for help information");
+    if (fr->contr.help)
+    {
+        mlx_string_put(fr->mlx, fr->win, 5, H_Y + 13,
+                       T0, "SCROLL UP or DOWN to zoom image");
+        mlx_string_put(fr->mlx, fr->win, 5, H_Y + 36,
+                       T0, "Press     <s>     to start changing JULIA OR NATALI");
+        mlx_string_put(fr->mlx, fr->win, 5, H_Y + 59,
+                       T0, "Press     <j>     to change fractol on JULIA");
+        mlx_string_put(fr->mlx, fr->win, 5, H_Y + 77,
+                       T0, "Press     <n>     to change fractol on Natali");
+        mlx_string_put(fr->mlx, fr->win, 5, H_Y + 95,
+                       T0, "Press     <m>     to change fractol on MANDELBROT");
+        mlx_string_put(fr->mlx, fr->win, 5, H_Y + 118,
+                       T0, "Press     <b>     to change color into blue");
+        mlx_string_put(fr->mlx, fr->win, 5, H_Y + 136,
+                       T0, "Press   <space>   to move into base position");
+        mlx_string_put(fr->mlx, fr->win, 5, H_Y + 159,
+                       T0, "Press LEFT button and move mouse to shift image");
+    }
 }

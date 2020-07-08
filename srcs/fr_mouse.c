@@ -23,8 +23,8 @@ int		fr_mouse_press(int button, int x, int y, t_fr *fr)
 
 int		fr_mouse_move(int x, int y, t_fr *fr)
 {
-    if (fr->contr.left_button && (fr->name == MANDELBROT
-    || (fr->name == JULIA && !fr->contr.start_move)))
+    if (fr->contr.left_button && fr->name == MANDELBROT)
+    //|| (fr->name == JULIA && !fr->contr.start_move)))
 	{
 		if (fr->contr.prev_x == 0)
 			fr->contr.prev_x = x;

@@ -20,7 +20,8 @@ void		fr_error(void)
 
 void		fr_not_valid_imput(void)
 {
-	ft_putstr("not valid input, please write <m> or <j>");
+	ft_putstr("Not valid input,\nplease write: <m> for Mandelbrot\n          "
+           "    <j> for Julia\n              <n> for Natali");
 	exit(1);
 }
 

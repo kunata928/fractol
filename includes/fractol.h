@@ -29,7 +29,7 @@
 # define ROSE				0x6D3445
 # define STRONG_ROSE		0x9D788F
 # define DEF_COL			0xC488AC
-# define TEXT_COL0			0x9D828F
+# define T0			0x9D828F
 # define TEXT_COL1			0xAF6C93
 # define TEXT_COL2			0xD54E94
 
@@ -55,6 +55,7 @@
 # define MAX_ITERATION		255
 # define D_SCALE			1.15
 # define THREADS            3
+# define H_Y                495
 
 # define TRUE				1
 # define FALSE				0
@@ -104,7 +105,6 @@ typedef struct		s_contr
 	int				shift;
 	int				cntrl;
 	int				help;
-	char			*map;
 	int				prev_x;
 	int				prev_y;
 	int             start_move;
@@ -146,11 +146,8 @@ typedef struct		s_fr
 
 	int				iter;
 	double			scale;
-	double			scale_shift_x;
-	double			scale_shift_y;
 	int				shift_x;
 	int				shift_y;
-	double			k;
 	
 }					t_fr;
 
@@ -178,6 +175,7 @@ int					fr_mouse_move(int x, int y, t_fr *fr);
 void				fr_scale_image(t_fr *fr, int keycode, int x, int y);
 void		        fr_scale_image_cursor(t_fr *fr, int keycode, int x, int y);
 void            	fr_change_iter(t_fr *fr, int keycode);
+void                change_help(t_fr *fr);
 
 void                plot_image(t_fr *fr);
 void				*fr_thread_mandelbrot(void *thread_data);
@@ -194,7 +192,8 @@ void                set_color_bubble_gum(t_fr *fr);
 void                set_color_bubble_gum1(t_fr *fr, t_col *col, int cols, int cole);
 
 void				fr_info_static0(t_fr *fr);
-void				fr_info_static1(t_fr *fr, char *txt);
+void				fr_info_static1(t_fr *fr);
+void                fr_info_help(t_fr *fr);
 
 void			    fr_evaluate(t_fr *fr);
 void			    fr_thread_selection(int i, t_datas *data, pthread_t *threads);

@@ -17,19 +17,10 @@ int			fdf_check_key(int keycode)
 	if (keycode == KEY_ESC || keycode == KEY_M ||
 			keycode == KEY_J || keycode == KEY_PLUS
 			|| keycode == KEY_MINUS || keycode == KEY_SPACE
-			|| keycode == KEY_N
+			|| keycode == KEY_N || keycode == KEY_H
 			|| keycode == KEY_S || keycode == KEY_B) //|| keycode == KEY_Z
 		return (1);
 	return (0);
-}
-
-void		fdf_turn_in_help(t_fr *fr)
-{
-//	fdf->condition.help = !(fdf->condition.help);
-//	fdf_copy_in_cur(fdf);
-//	fdf_eval_cur(fdf);
-//	fdf_center(fdf);
-//	fdf_plot(fdf);
 }
 
 int			fr_key_press(int keycode, t_fr *fr)
@@ -48,6 +39,8 @@ int			fr_key_press(int keycode, t_fr *fr)
 		    moving_image(fr);
 		if (keycode == KEY_B)
 		    change_color(fr);
+		if (keycode == KEY_H)
+		    change_help(fr);
 //		if (keycode == KEY_Z)
 //		    zoom(fr);
 

@@ -71,15 +71,13 @@ void		fr_set_color(t_fr *fr)
 {
 	int		i;
 	t_col	col;
-	int		mid;
 
 	i = 0;
-    mid = fdf_doublebltoint(fr->iter / log2((double)fr->iter));
 	col.start = 0;
-	col.end = mid;
+	col.end = fdf_doublebltoint(fr->iter / (log2((double)fr->iter) + 1));
 	col.scol = GELB;
 	col.ecol = ROT;
-	while (i < mid)
+	while (i < col.end)
 	{
 		fr->color[i] = fr_color_pnt(&col, i);
 		i++;

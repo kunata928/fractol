@@ -65,3 +65,9 @@ void		fr_change_iter(t_fr *fr, int keycode)
         fr_set_color(fr);
 	plot_image(fr);
 }
+
+void        change_help(t_fr *fr)
+{
+    fr->contr.help = !(fr->contr.help);
+    plot_image(fr);
+}
